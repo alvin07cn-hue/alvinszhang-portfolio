@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="Selected artworks by Alvin S. Zhang across painting, installation, printmaking, drawing, and digital media." />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="./assets/urban-main.webp" as="image" fetchpriority="high" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./site.js" defer></script>
+    <title>Alvin S. Zhang — Selected Works</title>
+  </head>
+  <body data-page="works">
+    <a class="skip-link" href="#gallery">Skip to works</a>
+    <header class="site-header" id="site-header">
+      <a class="brand" id="brand" href="#urban-spirit" aria-label="Alvin S. Zhang, first work">Alvin S. Zhang</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <button type="button" class="nav-button" id="index-button" aria-haspopup="dialog" aria-controls="theme-panel">Index <span aria-hidden="true">+</span></button>
+        <a class="nav-button" id="about-link" href="./about.html">About</a>
+      </nav>
+      <div class="language-switch" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true" lang="en">EN</button>
+        <button type="button" data-lang="zh-Hans" aria-pressed="false" lang="zh-Hans">简</button>
+        <button type="button" data-lang="zh-Hant" aria-pressed="false" lang="zh-Hant">繁</button>
+      </div>
+    </header>
+
+    <div class="filter-status" id="filter-status" hidden>
+      <span id="filter-name"></span>
+      <button type="button" id="show-all">Show all works ×</button>
+    </div>
+
+    <main class="gallery" id="gallery" tabindex="-1"></main>
+
+    <dialog class="theme-panel" id="theme-panel" aria-labelledby="theme-heading">
+      <div class="dialog-top">
+        <span class="dialog-kicker" id="theme-heading">Index / Media</span>
+        <button class="icon-button" type="button" id="theme-close" aria-label="Close index">×</button>
+      </div>
+      <div class="theme-list" id="theme-list"></div>
+      <div class="theme-preview" id="theme-preview" aria-hidden="true">
+        <img src="./assets/bonsai-main.webp" alt="" />
+        <span id="theme-preview-label"></span>
+      </div>
+      <div class="dialog-bottom" id="theme-hint">Hover to preview · Select to filter</div>
+    </dialog>
+
+    <dialog class="work-panel" id="work-panel" aria-labelledby="work-heading">
+      <div class="dialog-top">
+        <span class="dialog-kicker" id="work-kicker"></span>
+        <button class="icon-button" type="button" id="work-close" aria-label="Close work information">×</button>
+      </div>
+      <div class="work-content">
+        <p class="work-number" id="work-number"></p>
+        <h2 id="work-heading"></h2>
+        <p class="work-medium" id="work-medium"></p>
+        <div class="work-statement" id="work-statement"></div>
+      </div>
+    </dialog>
+
+    <dialog class="viewer" id="viewer" aria-label="Artwork viewer">
+      <div class="viewer-top">
+        <span id="viewer-title"></span>
+        <div class="viewer-tools">
+          <button type="button" id="viewer-zoom-out" aria-label="Zoom out">−</button>
+          <span id="viewer-zoom-level">100%</span>
+          <button type="button" id="viewer-zoom-in" aria-label="Zoom in">+</button>
+          <button type="button" id="viewer-fit">Fit</button>
+          <button type="button" id="viewer-close">Close ×</button>
+        </div>
+      </div>
+      <div class="viewer-stage" id="viewer-stage">
+        <img id="viewer-image" alt="" draggable="false" />
+      </div>
+      <div class="viewer-bottom">
+        <button type="button" id="viewer-prev" aria-label="Previous image">←</button>
+        <span id="viewer-count"></span>
+        <button type="button" id="viewer-next" aria-label="Next image">→</button>
+        <span id="viewer-hint">Drag to move · Scroll to zoom · Esc to close</span>
+      </div>
+    </dialog>
+  </body>
+</html>
