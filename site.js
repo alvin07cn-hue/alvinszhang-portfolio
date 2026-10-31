@@ -84,16 +84,16 @@ const UI = {
 };
 
 const CATEGORIES = [
-  {id:'all', label:{en:'All works','zh-Hans':'全部作品','zh-Hant':'全部作品'}, preview:'urban-main.webp'},
-  {id:'painting', label:{en:'Painting','zh-Hans':'绘画','zh-Hant':'繪畫'}, preview:'oil-4856.webp'},
-  {id:'drawing', label:{en:'Drawing & printmaking','zh-Hans':'素描与版画','zh-Hant':'素描與版畫'}, preview:'bonsai-main.webp'},
-  {id:'installation', label:{en:'Installation & mixed media','zh-Hans':'装置与综合媒介','zh-Hant':'裝置與綜合媒材'}, preview:'thread-main.webp'},
-  {id:'digital', label:{en:'Digital','zh-Hans':'数字作品','zh-Hant':'數位作品'}, preview:'digital-one.webp'}
+  {id:'all', label:{en:'All works','zh-Hans':'全部作品','zh-Hant':'全部作品'}, preview:'urban-main.jpg'},
+  {id:'painting', label:{en:'Painting','zh-Hans':'绘画','zh-Hant':'繪畫'}, preview:'oil-4856.jpg'},
+  {id:'drawing', label:{en:'Drawing & printmaking','zh-Hans':'素描与版画','zh-Hant':'素描與版畫'}, preview:'bonsai-main.jpg'},
+  {id:'installation', label:{en:'Installation & mixed media','zh-Hans':'装置与综合媒介','zh-Hant':'裝置與綜合媒材'}, preview:'thread-main.jpg'},
+  {id:'digital', label:{en:'Digital','zh-Hans':'数字作品','zh-Hant':'數位作品'}, preview:'digital-one.jpg'}
 ];
 
 const WORKS = [
   {
-    id:'urban-spirit', category:'installation', layout:'landscape', tone:'light', images:['urban-main.webp'],
+    id:'urban-spirit', category:'installation', layout:'landscape', tone:'light', images:['urban-main.jpg'],
     title:{en:'Urban Spirit','zh-Hans':'城市精神','zh-Hant':'城市精神'},
     medium:{en:'Mixed media','zh-Hans':'综合媒介','zh-Hant':'綜合媒材'},
     statement:{
@@ -103,7 +103,7 @@ const WORKS = [
     }
   },
   {
-    id:'bonsai', category:'drawing', layout:'portrait', tone:'light', images:['bonsai-main.webp'],
+    id:'bonsai', category:'drawing', layout:'portrait', tone:'light', images:['bonsai-main.jpg'],
     title:{en:'Bonsai','zh-Hans':'盆景','zh-Hant':'盆景'},
     medium:{en:'Colored pencil','zh-Hans':'彩色铅笔','zh-Hant':'彩色鉛筆'},
     statement:{
@@ -113,7 +113,7 @@ const WORKS = [
     }
   },
   {
-    id:'under-the-sycamore-tree', category:'drawing', layout:'portrait', tone:'light', images:['sycamore-main.webp'],
+    id:'under-the-sycamore-tree', category:'drawing', layout:'portrait', tone:'light', images:['sycamore-main.jpg'],
     title:{en:'Under the Sycamore Tree','zh-Hans':'梧桐树下','zh-Hant':'梧桐樹下'},
     medium:{en:'Woodcut print','zh-Hans':'木刻版画','zh-Hant':'木刻版畫'},
     statement:{
@@ -123,7 +123,7 @@ const WORKS = [
     }
   },
   {
-    id:'untitled-painting-series', category:'painting', layout:'portrait', imageLayouts:['portrait','landscape'], tone:'light', images:['oil-4856.webp','oil-4854.webp'],
+    id:'untitled-painting-series', category:'painting', layout:'portrait', imageLayouts:['portrait','landscape'], tone:'light', images:['oil-4856.jpg','oil-4854.jpg'],
     title:{en:'The Roots Remember','zh-Hans':'根仍记得','zh-Hant':'根仍記得'},
     medium:{en:'Oil painting series · 2 works','zh-Hans':'油画系列 · 两张','zh-Hant':'油畫系列 · 兩張'},
     statement:{
@@ -139,7 +139,7 @@ In the second painting, a Buddha’s head is both supported and entangled by ban
     }
   },
   {
-    id:'untitled-painting', category:'painting', layout:'portrait', tone:'light', images:['oil-6114.webp'],
+    id:'untitled-painting', category:'painting', layout:'portrait', tone:'light', images:['oil-6114.jpg'],
     title:{en:'Mountains in the Room','zh-Hans':'山在屋里','zh-Hant':'山在屋裡'},
     medium:{en:'Oil painting','zh-Hans':'油画','zh-Hant':'油畫'},
     statement:{
@@ -155,7 +155,7 @@ In this painting, the mountains seem to float. The remembered landscape is no lo
     }
   },
   {
-    id:'flash-bulb-memory', category:'installation', layout:'portrait', tone:'dark', accent:true, images:['flash-main.webp','flash-detail.webp','flash-hanging.webp'],
+    id:'flash-bulb-memory', category:'installation', layout:'portrait', tone:'dark', accent:true, images:['flash-main.jpg','flash-detail.jpg','flash-hanging.jpg'],
     title:{en:'Flash-bulb Memory','zh-Hans':'闪光灯记忆','zh-Hant':'閃光燈記憶'},
     medium:{en:'Installation · mixed media','zh-Hans':'装置 · 综合媒介','zh-Hant':'裝置 · 綜合媒材'},
     statement:{
@@ -165,7 +165,7 @@ In this painting, the mountains seem to float. The remembered landscape is no lo
     }
   },
   {
-    id:'season-change', category:'drawing', layout:'portrait', tone:'light', images:['season-main.webp','season-second.webp'],
+    id:'season-change', category:'drawing', layout:'portrait', tone:'light', images:['season-main.jpg','season-second.jpg'],
     title:{en:'Season Change','zh-Hans':'季节更迭','zh-Hant':'季節更迭'},
     medium:{en:'Pencil drawing','zh-Hans':'铅笔素描','zh-Hant':'鉛筆素描'},
     statement:{
@@ -175,7 +175,7 @@ In this painting, the mountains seem to float. The remembered landscape is no lo
     }
   },
   {
-    id:'hands', category:'painting', layout:'portrait', tone:'light', images:['hands-main.webp'],
+    id:'hands', category:'painting', layout:'portrait', tone:'light', images:['hands-main.jpg'],
     title:{en:'Hands','zh-Hans':'手','zh-Hant':'手'},
     medium:{en:'Oil on canvas','zh-Hans':'布面油画','zh-Hant':'布面油畫'},
     statement:{
@@ -185,7 +185,7 @@ In this painting, the mountains seem to float. The remembered landscape is no lo
     }
   },
   {
-    id:'the-thread-of-fate', category:'installation', layout:'portrait', tone:'dark', accent:true, images:['thread-main.webp','thread-detail.webp','thread-process.webp'],
+    id:'the-thread-of-fate', category:'installation', layout:'portrait', tone:'dark', accent:true, images:['thread-main.jpg','thread-detail.jpg','thread-process.jpg'],
     title:{en:'The Thread of Fate','zh-Hans':'命运之线','zh-Hant':'命運之線'},
     medium:{en:'Installation · mixed media','zh-Hans':'装置 · 综合媒介','zh-Hant':'裝置 · 綜合媒材'},
     statement:{
@@ -195,7 +195,7 @@ In this painting, the mountains seem to float. The remembered landscape is no lo
     }
   },
   {
-    id:'manifest', category:'digital', layout:'landscape', tone:'dark', accent:true, images:['digital-one.webp','digital-two.webp'],
+    id:'manifest', category:'digital', layout:'landscape', tone:'dark', accent:true, images:['digital-one.jpg','digital-two.jpg'],
     title:{en:'Manifest','zh-Hans':'显现','zh-Hant':'顯現'},
     medium:{en:'Digital work','zh-Hans':'数字创作','zh-Hant':'數位創作'},
     statement:{
