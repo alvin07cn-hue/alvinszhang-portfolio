@@ -47,7 +47,8 @@ button:focus-visible,a:focus-visible{outline:2px solid currentColor;outline-offs
 .slide--portrait[data-id="flash-bulb-memory"] .slide-title{font-size:clamp(3rem,4.9vw,5.8rem)}
 .slide-accent{height:5px;width:3rem;background:#d6e98b;margin:0 0 2rem;display:none}
 .slide--accent .slide-accent{display:block}
-.slide--portrait .slide-accent{position:absolute;top:29%;left:2.1vw}
+.slide--portrait .slide-accent{flex:none;margin:auto 0 1.2rem}
+.slide--portrait.slide--accent .slide-title{margin:0 0 .95rem}
 .slide-medium{margin:1.15rem 0 1.5rem;opacity:.66}
 .slide--portrait .slide-medium{margin:0 0 auto}
 .slide-carousel{display:flex;align-items:center;gap:1rem;font:400 .75rem var(--mono);margin:.6rem 0 1rem}
@@ -130,8 +131,9 @@ body[data-page="about"]{overflow:auto}
  .slide--landscape .slide-panel{min-width:0;max-width:80%;padding:1.3rem 1.4rem}
  .slide--landscape .slide-title{font-size:clamp(3.5rem,13vw,6.5rem)}
  .slide--portrait .artwork-trigger{width:100%}
- .slide--portrait .slide-panel,.slide--portrait.slide--light .slide-panel{left:0;right:auto;top:auto;bottom:0;width:min(76%,450px);height:auto;min-height:210px;background:#101010;color:#fff;padding:1.25rem 1.4rem;display:block}
- .slide--portrait .slide-title,.slide--portrait[data-id="flash-bulb-memory"] .slide-title{font-size:clamp(3.2rem,12vw,5.6rem);margin:0}
+ .slide--portrait .slide-panel{left:0;right:auto;top:auto;bottom:0;width:min(82%,450px);height:auto;min-height:0;background:#101010;color:#fff;padding:1.25rem 1.4rem;display:block}
+ .slide--portrait.slide--light .slide-panel{background:#fff;color:#111}
+ .slide--portrait .slide-title,.slide--portrait.slide--accent .slide-title,.slide--portrait[data-id="flash-bulb-memory"] .slide-title{font-size:clamp(3.2rem,12vw,5.6rem);margin:0}
  .slide--portrait .slide-kicker{margin-bottom:.8rem}
  .slide--portrait .slide-medium{margin:.7rem 0}
  .slide--portrait .slide-accent{position:static;margin:0 0 .7rem}
@@ -159,7 +161,13 @@ body[data-page="about"]{overflow:auto}
  .slide--landscape .slide-title{font-size:clamp(3.3rem,14vw,5.5rem)}
  .slide--landscape .slide-kicker{margin-bottom:.65rem}
  .slide--landscape .slide-medium{margin:.5rem 0}
- .slide-hint{font-size:.63rem;padding:.75rem .8rem}
+ .slide-hint{display:none}
+ .slide{min-height:0}
+ .gallery-end{min-height:0}
+ .slide--portrait .slide-panel{width:min(90%,450px);padding:1rem 1.1rem}
+ .slide--portrait .slide-title,.slide--portrait.slide--accent .slide-title,.slide--portrait[data-id="flash-bulb-memory"] .slide-title{font-size:clamp(2.7rem,11vw,4.5rem)}
+ .work-content h2{font-size:clamp(3rem,12vw,5rem);overflow-wrap:anywhere}
+ .work-content{margin-top:2rem;padding-bottom:3rem}
  .theme-option{font-size:clamp(2rem,7.4vw,3rem)}
  .filter-status{top:94px;left:4vw;right:auto;gap:.6rem;font-size:.61rem}
  .dialog-bottom{font-size:.65rem;max-width:70%}

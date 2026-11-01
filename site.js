@@ -218,7 +218,7 @@ const page = document.body.dataset.page;
 let locale = LANGUAGES.includes(localStorage.getItem('portfolio-language')) ? localStorage.getItem('portfolio-language') : 'en';
 let activeWork = WORKS[0].id;
 let activeCategory = 'all';
-let observer;
+let scrollFrame;
 let viewerWork = null;
 let viewerImageIndex = 0;
 const slideImageIndices = {};
@@ -249,7 +249,6 @@ function renderWorks(){
   const gallery=byId('gallery');
   const works=visibleWorks();
   if(!works.some(work=>work.id===activeWork))activeWork=works[0].id;
-  if(observer) observer.disconnect();
   gallery.setAttribute('aria-label',activeCategory==='all'?t('selected'):categoryFor(activeCategory).label[locale]);
   gallery.innerHTML=works.map((work,i)=>{
     const category=categoryFor(work.category);
@@ -289,15 +288,21 @@ function renderWorks(){
   byId('work-close').setAttribute('aria-label',t('closeInfo'));
   setText('work-kicker',t('info'));
   updateViewerText();
-  observer=new IntersectionObserver(entries=>{
-    const visible=entries.filter(e=>e.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];
-    if(!visible) return;
-    activeWork=visible.target.dataset.id || activeWork;
-    byId('site-header').classList.toggle('is-dark',visible.target.classList.contains('slide--dark'));
-  },{root:gallery,threshold:[.55,.7]});
-  gallery.querySelectorAll('.slide,.gallery-end').forEach(node=>observer.observe(node));
   const target=byId(activeWork);
-  requestAnimationFrame(()=>{ if(target) gallery.scrollTop=target.offsetTop; });
+  requestAnimationFrame(()=>{ if(target) gallery.scrollTop=target.offsetTop; updateActiveSlide(); });
+}
+
+function updateActiveSlide(){
+  const gallery=byId('gallery');
+  const midpoint=gallery.getBoundingClientRect().top+gallery.clientHeight/2;
+  const slides=[...gallery.querySelectorAll('.slide,.gallery-end')];
+  const visible=slides.find(slide=>{
+    const rect=slide.getBoundingClientRect();
+    return rect.top<=midpoint && rect.bottom>midpoint;
+  });
+  if(!visible) return;
+  if(visible.dataset.id) activeWork=visible.dataset.id;
+  byId('site-header').classList.toggle('is-dark',visible.classList.contains('slide--dark'));
 }
 
 function changeSlideImage(id,delta){
@@ -429,6 +434,11 @@ function renderAbout(){
 
 document.querySelectorAll('.language-switch button').forEach(button=>button.addEventListener('click',()=>setLanguage(button.dataset.lang)));
 if(page==='works'){
+  byId('gallery').addEventListener('scroll',()=>{
+    cancelAnimationFrame(scrollFrame);
+    scrollFrame=requestAnimationFrame(updateActiveSlide);
+  },{passive:true});
+  window.addEventListener('resize',updateActiveSlide);
   byId('index-button').addEventListener('click',()=>byId('theme-panel').showModal());
   byId('show-all').addEventListener('click',()=>applyCategory('all'));
   byId('brand').addEventListener('click',event=>{event.preventDefault();applyCategory('all');});
