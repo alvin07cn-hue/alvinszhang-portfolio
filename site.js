@@ -86,7 +86,7 @@ const UI = {
 const CATEGORIES = [
   {id:'all', label:{en:'All works','zh-Hans':'全部作品','zh-Hant':'全部作品'}, preview:'urban-main.jpg'},
   {id:'painting', label:{en:'Painting','zh-Hans':'绘画','zh-Hant':'繪畫'}, preview:'oil-4856.jpg'},
-  {id:'drawing', label:{en:'Drawing & printmaking','zh-Hans':'素描与版画','zh-Hant':'素描與版畫'}, preview:'bonsai-main.jpg'},
+  {id:'drawing', label:{en:'Drawing','zh-Hans':'素描','zh-Hant':'素描'}, preview:'bonsai-main.jpg'},
   {id:'installation', label:{en:'Installation & mixed media','zh-Hans':'装置与综合媒介','zh-Hant':'裝置與綜合媒材'}, preview:'thread-main.jpg'},
   {id:'digital', label:{en:'Digital','zh-Hans':'数字作品','zh-Hant':'數位作品'}, preview:'digital-one.jpg'}
 ];
