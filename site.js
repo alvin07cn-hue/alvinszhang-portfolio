@@ -113,16 +113,6 @@ const WORKS = [
     }
   },
   {
-    id:'under-the-sycamore-tree', category:'drawing', layout:'portrait', tone:'light', images:['sycamore-main.jpg'],
-    title:{en:'Under the Sycamore Tree','zh-Hans':'梧桐树下','zh-Hant':'梧桐樹下'},
-    medium:{en:'Woodcut print','zh-Hans':'木刻版画','zh-Hant':'木刻版畫'},
-    statement:{
-      en:'Shanghai’s plane trees became a marker of belonging. This woodcut records familiar streets and the memory of walking beneath their branches.',
-      'zh-Hans':'上海街道上的梧桐树成为归属感的印记。这幅木刻记录了熟悉的街景，以及从树荫下走过的记忆。',
-      'zh-Hant':'上海街道上的梧桐樹成為歸屬感的印記。這幅木刻記錄了熟悉的街景，以及從樹蔭下走過的記憶。'
-    }
-  },
-  {
     id:'untitled-painting-series', category:'painting', layout:'portrait', imageLayouts:['portrait','landscape'], tone:'light', images:['oil-4856.jpg','oil-4854.jpg'],
     title:{en:'The Roots Remember','zh-Hans':'根仍记得','zh-Hant':'根仍記得'},
     medium:{en:'Oil painting series · 2 works','zh-Hans':'油画系列 · 两张','zh-Hant':'油畫系列 · 兩張'},
@@ -209,7 +199,7 @@ In this painting, the mountains seem to float. The remembered landscape is no lo
 const DISPLAY_ORDER = [
   'urban-spirit', 'bonsai', 'manifest', 'the-thread-of-fate',
   'untitled-painting', 'flash-bulb-memory', 'untitled-painting-series',
-  'under-the-sycamore-tree', 'hands', 'season-change'
+  'hands', 'season-change'
 ];
 const ORDERED_WORKS = DISPLAY_ORDER.map(id => WORKS.find(work => work.id === id));
 
@@ -414,18 +404,45 @@ function updateViewerText(){
   byId('viewer-prev').disabled=byId('viewer-next').disabled=!viewerWork || viewerWork.images.length<2;
 }
 
+const ABOUT_CV = {
+  en: {
+    lead: 'Shuchang Zhang is based in Somerville, Massachusetts. His practice spans art-making, exhibition curation, and art research. His work explores identity, memory, and home.',
+    more: 'View experience ↓', selectedHeading: 'Exhibitions', experienceHeading: 'Curation & research', awardsHeading: 'Awards & certifications', educationHeading: 'Education',
+    selected: [['2025','Reframing Campus Ecologies, Slater Concourse, Tufts University, Massachusetts, USA'],['2024','International Youth Art Exhibition “Salute to the Masters”, Museum of Fine Arts, Boston, Massachusetts, USA; Vanke Plaza, Shanghai, China'],['2024','“The Beauty of the Earth”, UNO Chinese Culture Club, Vienna, Austria']],
+    experience: [['Fall 2026','Curator, Between Becoming, School of the Museum of Fine Arts at Tufts University, Massachusetts, USA'],['Summer 2026','Art Researcher (Chinese and English), UCCA Center for Contemporary Art, Beijing, China']],
+    awards: [['2025','Diploma in Jadeite Jade Identification, China University of Geosciences'],['2024','High Commendation, John Locke Essay Competition'],['2023','Silver Medal, H.C. Andersen Art Awards']],
+    education: [['2025–2029 (expected)','Bachelor of Fine Arts, Tufts University / School of the Museum of Fine Arts at Tufts University, Massachusetts, USA']]
+  },
+  'zh-Hans': {
+    lead: '张书畅现居美国马萨诸塞州萨默维尔，从事艺术创作、展览策划与艺术研究。他的作品围绕身份、记忆与家乡展开。',
+    more: '了解我的经历 ↓', selectedHeading: '展览', experienceHeading: '策展与研究', awardsHeading: '奖项与认证', educationHeading: '教育',
+    selected: [['2025','Reframing Campus Ecologies，Slater Concourse，塔夫茨大学，马萨诸塞州，美国'],['2024','国际青少年艺术展“致敬大师”，波士顿美术馆，马萨诸塞州，美国；万科广场，上海，中国'],['2024','“地球之美”，UNO Chinese Culture Club，维也纳，奥地利']],
+    experience: [['2026 年秋','策展人，Between Becoming，塔夫茨大学美术博物馆学院，马萨诸塞州，美国'],['2026 年夏','艺术研究员（中英文），尤伦斯当代艺术中心，北京，中国']],
+    awards: [['2025','翡翠鉴定文凭，中国地质大学'],['2024','High Commendation，John Locke Essay Competition'],['2023','银奖，H.C. Andersen Art Awards']],
+    education: [['2025–2029（预计）','艺术学士，塔夫茨大学 / 塔夫茨大学美术博物馆学院，马萨诸塞州，美国']]
+  },
+  'zh-Hant': {
+    lead: '張書暢現居美國麻薩諸塞州薩默維爾，從事藝術創作、展覽策劃與藝術研究。他的作品圍繞身份、記憶與家鄉展開。',
+    more: '了解我的經歷 ↓', selectedHeading: '展覽', experienceHeading: '策展與研究', awardsHeading: '獎項與認證', educationHeading: '教育',
+    selected: [['2025','Reframing Campus Ecologies，Slater Concourse，塔夫茨大學，麻薩諸塞州，美國'],['2024','國際青少年藝術展「致敬大師」，波士頓美術館，麻薩諸塞州，美國；萬科廣場，上海，中國'],['2024','「地球之美」，UNO Chinese Culture Club，維也納，奧地利']],
+    experience: [['2026 年秋','策展人，Between Becoming，塔夫茨大學美術博物館學院，麻薩諸塞州，美國'],['2026 年夏','藝術研究員（中英文），尤倫斯當代藝術中心，北京，中國']],
+    awards: [['2025','翡翠鑑定文憑，中國地質大學'],['2024','High Commendation，John Locke Essay Competition'],['2023','銀獎，H.C. Andersen Art Awards']],
+    education: [['2025–2029（預計）','藝術學士，塔夫茨大學 / 塔夫茨大學美術博物館學院，麻薩諸塞州，美國']]
+  }
+};
 function renderAbout(){
+  const content=ABOUT_CV[locale];
   setText('about-overline',t('aboutOverline'));
   setText('about-name',locale==='en'?'Shuchang\n(Alvin) Zhang':locale==='zh-Hans'?'张书畅\nAlvin Zhang':'張書暢\nAlvin Zhang');
-  setText('about-lead',t('aboutLead'));
-  for(const key of ['Practice','Education','Experience','Selected','Awards']){
-    const slug=key.toLowerCase();
-    setText(`about-${slug}-heading`,t(`about${key}Heading`));
-    if(key!=='Selected' && key!=='Awards')setText(`about-${slug}`,t(`about${key}`));
-  }
-  for(const key of ['Selected','Awards']){
-    byId(`about-${key.toLowerCase()}`).replaceChildren(...t(`about${key}`).map(item=>{
-      const li=document.createElement('li');li.textContent=item;return li;
+  setText('about-lead',content.lead);
+  setText('about-more',content.more);
+  for(const key of ['selected','experience','awards','education']){
+    setText(`about-${key}-heading`,content[`${key}Heading`]);
+    byId(`about-${key}`).replaceChildren(...content[key].map(([year,description])=>{
+      const li=document.createElement('li');
+      const date=document.createElement('span'); date.className='cv-year'; date.textContent=year;
+      const text=document.createElement('span'); text.className='cv-description'; text.textContent=description;
+      li.append(date,text); return li;
     }));
   }
   setText('about-contact-heading',t('contact'));

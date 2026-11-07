@@ -25,19 +25,22 @@
       </div>
     </header>
     <main class="about-page" id="about-main" tabindex="-1">
-      <div class="about-hero">
-        <span class="about-overline" id="about-overline">Artist / About</span>
-        <h1 id="about-name">Shuchang<br />(Alvin) Zhang</h1>
-        <div class="about-hero-art" aria-hidden="true"><img src="./assets/sycamore-main.jpg" alt="" /></div>
-      </div>
-      <div class="about-body">
-        <p class="about-lead" id="about-lead"></p>
+      <section class="about-hero" aria-labelledby="about-name">
+        <div class="about-intro">
+          <span class="about-overline" id="about-overline">Artist / About</span>
+          <h1 id="about-name">Shuchang<br />(Alvin) Zhang</h1>
+          <div class="about-accent" aria-hidden="true"></div>
+          <p class="about-lead" id="about-lead"></p>
+          <a class="about-more" id="about-more" href="#about-cv">View experience ↓</a>
+        </div>
+        <figure class="about-hero-art"><img src="./assets/about-portrait.jpg" alt="" /></figure>
+      </section>
+      <div class="about-body" id="about-cv">
         <div class="about-facts">
-          <div class="about-fact"><h2 id="about-practice-heading"></h2><p id="about-practice"></p></div>
-          <div class="about-fact"><h2 id="about-education-heading"></h2><p id="about-education"></p></div>
-          <div class="about-fact"><h2 id="about-experience-heading"></h2><p id="about-experience"></p></div>
-          <div class="about-fact"><h2 id="about-selected-heading"></h2><ul id="about-selected"></ul></div>
-          <div class="about-fact"><h2 id="about-awards-heading"></h2><ul id="about-awards"></ul></div>
+          <section class="about-fact"><h2 id="about-selected-heading"></h2><ul id="about-selected" class="cv-list"></ul></section>
+          <section class="about-fact"><h2 id="about-experience-heading"></h2><ul id="about-experience" class="cv-list"></ul></section>
+          <section class="about-fact"><h2 id="about-awards-heading"></h2><ul id="about-awards" class="cv-list"></ul></section>
+          <section class="about-fact"><h2 id="about-education-heading"></h2><ul id="about-education" class="cv-list"></ul></section>
         </div>
       </div>
       <footer class="about-footer">
