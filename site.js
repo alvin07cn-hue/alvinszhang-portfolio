@@ -96,7 +96,7 @@ const WORKS = [
     title:{en:'Urban Spirit','zh-Hans':'城市精神','zh-Hant':'城市精神'},
     medium:{en:'Mixed media','zh-Hans':'综合媒介','zh-Hant':'綜合媒材'},
     statement:{
-      en:'Inspired by the adventurous spirit of Wenzhou, this work reflects the pull of home and the idea of returning to one’s roots.',
+      en:"In China, Wenzhou people are known for their adventurous spirit. They possess the courage and unity akin to Capricorn, venturing worldwide for trade, but no matter how far they go, the belief in returning to their roots remains strong, and eventually, most Wenzhou people will return to their hometown.",
       'zh-Hans':'作品以温州的开拓精神为起点，思考离乡之后仍然牵引着人的故土，以及最终回到根源的愿望。',
       'zh-Hant':'作品以溫州的開拓精神為起點，思考離鄉之後仍然牽引著人的故土，以及最終回到根源的願望。'
     }
@@ -106,7 +106,7 @@ const WORKS = [
     title:{en:'Bonsai','zh-Hans':'盆景','zh-Hant':'盆景'},
     medium:{en:'Colored pencil','zh-Hans':'彩色铅笔','zh-Hant':'彩色鉛筆'},
     statement:{
-      en:'A landscape of courtyard architecture and boxwood becomes a way to hold the artist’s hometown close, even across distance and change.',
+      en:"My artwork employs boxwood as a metaphor for my hometown, acting as the structural support for both the courtyard and the composition of the painting. Within the piece, the traditional Suzhou courtyards are interwoven with the modern architecture of my hometown, symbolizing the deep roots of my soul in the land of my birth. Regardless of the changes in the era or the place where one resides, the connection to one’s hometown remains unbreakably close. I am of the belief that, much like the bark of a deciduous tree, we all eventually return to the soil that nurtured us at the end of life’s journey. In the end, we all end our days on our native soil.",
       'zh-Hans':'黄杨木与庭院建筑交织成一片风景，让家乡成为可以随身携带的记忆，也让人与故土的联系跨越距离与变化。',
       'zh-Hant':'黃楊木與庭院建築交織成一片風景，讓家鄉成為可以隨身攜帶的記憶，也讓人與故土的聯繫跨越距離與變化。'
     }
@@ -148,7 +148,7 @@ In this painting, the mountains seem to float. The remembered landscape is no lo
     title:{en:'Flash-bulb Memory','zh-Hans':'闪光灯记忆','zh-Hant':'閃光燈記憶'},
     medium:{en:'Installation · mixed media','zh-Hans':'装置 · 综合媒介','zh-Hant':'裝置 · 綜合媒材'},
     statement:{
-      en:'Wax dissolves around a suspended form while light fixes a moment of exam anxiety like a photograph. The material makes a private tension visible.',
+      en:"At that moment, time stands still, and memories are etched onto photographic paper, transforming into unforgettable fragments of memory amidst the flicker of white light. I explored the scene of my entering the state of examination, where anxiety filled my entire body, and sweat and tears flowed across my skin without leaving any trace. The wax in the installation amplifies this trace, making anxiety visible. The ongoing dissolution of the wax ultimately exposes a wire within the brain region, serving as a metaphor for the heightened state of mental tension. The light illuminates the entire scene, metaphorically acting as a flashlight, capturing the moment of memory. This allows viewers to resonate with my past worries and tension about exams.",
       'zh-Hans':'蜡在悬置的形体上缓慢消融，光线像闪光灯一样定格考试焦虑的瞬间。材料把难以言说的紧张感变得可见。',
       'zh-Hant':'蠟在懸置的形體上緩慢消融，光線像閃光燈一樣定格考試焦慮的瞬間。材料把難以言說的緊張感變得可見。'
     }
@@ -158,7 +158,7 @@ In this painting, the mountains seem to float. The remembered landscape is no lo
     title:{en:'Season Change','zh-Hans':'季节更迭','zh-Hant':'季節更迭'},
     medium:{en:'Pencil drawing','zh-Hans':'铅笔素描','zh-Hant':'鉛筆素描'},
     statement:{
-      en:'Fallen leaves and bark return to the earth. This drawing considers change, decay, and the places that remain with us.',
+      en:"By closely observing the textures and details of withered leaves and dried bark, I present the changes in my thoughts and emotions. Fallen leaves land on the ground, and dead tree trunks fall to the earth to decay and become the soil that nurtures us. Life is the same; people are like leaves that leave the ground. And in the end, they all return to their homeland, giving back through their actions and nourishing the land that gave them life.",
       'zh-Hans':'落叶与枯木回到泥土。这件素描通过自然的纹理，思考变化、消逝，以及始终留在心中的地方。',
       'zh-Hant':'落葉與枯木回到泥土。這件素描透過自然的紋理，思考變化、消逝，以及始終留在心中的地方。'
     }
@@ -168,7 +168,7 @@ In this painting, the mountains seem to float. The remembered landscape is no lo
     title:{en:'Hands','zh-Hans':'手','zh-Hant':'手'},
     medium:{en:'Oil on canvas','zh-Hans':'布面油画','zh-Hant':'布面油畫'},
     statement:{
-      en:'Painted in reverence for the artist’s grandmother’s generation, this work links hands, ivy, and a distant city to the care that connects one generation to the next.',
+      en:"Through painting, I express my reverence for my grandmother’s generation. She wove the future with her hands. Distant buildings represent future pathways, emerging subtly in the sunrise. Ivy symbolizes vitality, and through her hands, my grandmother connected the present and the future, in the process of which our generation was born. We are protected within the vines.",
       'zh-Hans':'这件作品向祖辈致敬。双手、常春藤与远处的城市，连起代际之间的照顾与生命力。',
       'zh-Hant':'這件作品向祖輩致敬。雙手、常春藤與遠處的城市，連起世代之間的照顧與生命力。'
     }
@@ -178,7 +178,7 @@ In this painting, the mountains seem to float. The remembered landscape is no lo
     title:{en:'The Thread of Fate','zh-Hans':'命运之线','zh-Hant':'命運之線'},
     medium:{en:'Installation · mixed media','zh-Hans':'装置 · 综合媒介','zh-Hant':'裝置 · 綜合媒材'},
     statement:{
-      en:'Books, light, resin, plants, and layered material evoke the water cycle and the marks that give a life its particular course.',
+      en:"Life is like the water cycle, going through various choices and trials to form our unique life trajectories. In the artwork, the pages of a book, a light tube, and decaying plants symbolize the cycle of life and its hardships, hinting at the inevitable difficulties and stains in life. Looking back, it is these people who have overcome hardships that give life its color and meaning.",
       'zh-Hans':'书页、光、树脂与植物构成层层叠叠的材料景观，借水的循环讲述人生经历留下的痕迹。',
       'zh-Hant':'書頁、光、樹脂與植物構成層層疊疊的材料景觀，藉水的循環講述人生經歷留下的痕跡。'
     }
@@ -188,7 +188,7 @@ In this painting, the mountains seem to float. The remembered landscape is no lo
     title:{en:'Manifest','zh-Hans':'显现','zh-Hant':'顯現'},
     medium:{en:'Digital work','zh-Hans':'数字创作','zh-Hant':'數位創作'},
     statement:{
-      en:'As time passes, my feelings for my hometown become memories. However real they once felt, those memories gradually take on a virtual quality. Scenes carrying elements of home become abstract and conceptual, yet the sentiment remains, shining in my mind as genuinely and beautifully as a fairy tale.',
+      en:"As time passes, the feelings for my hometown will eventually become memories, and no matter how real they are, they will turn into virtual situations. All scenes containing elements of my hometown will become abstract and conceptual, yet the sentiment remains, shining brightly in my mind, as genuine and beautiful as a fairy tale.",
       'zh-Hans':'随着时间流逝，我对故乡的感受渐渐成为记忆。无论它们曾经多么真实，回忆中的场景都会逐渐带上虚拟的质感。故乡的景象与元素变得抽象、观念化，但那份情感依然留在心中，明亮而真切，如童话般美好。',
       'zh-Hant':'隨著時間流逝，我對故鄉的感受漸漸成為記憶。無論它們曾經多麼真實，回憶中的場景都會逐漸帶上虛擬的質感。故鄉的景象與元素變得抽象、觀念化，但那份情感依然留在心中，明亮而真切，如童話般美好。'
     }
