@@ -188,7 +188,7 @@ const ORDERED_WORKS = DISPLAY_ORDER.map(id => WORKS.find(work => work.id === id)
 
 function formatWorkTitle(title){
   if(locale!=='en' && /^[一-鿿]{4}$/u.test(title)){
-    return '<span class="title-pair">'+title.slice(0,2)+'</span><span class="title-pair">'+title.slice(2)+'</span>';
+    return '<span class="title-pair">'+title.slice(0,2)+'</span><wbr><span class="title-pair">'+title.slice(2)+'</span>';
   }
   return title;
 }

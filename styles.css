@@ -248,3 +248,8 @@ body.writing-page{overflow:auto}
 .slide--portrait .slide-title,.slide--portrait[data-id="flash-bulb-memory"] .slide-title{font-size:clamp(1.7rem,3.2vw,4rem)}
 @media(max-width:800px){.slide--portrait .slide-title,.slide--portrait[data-id="flash-bulb-memory"] .slide-title{font-size:clamp(3.2rem,10vw,5rem)}}
 @media(max-width:560px){.slide--portrait .slide-title,.slide--portrait[data-id="flash-bulb-memory"] .slide-title{font-size:clamp(2.5rem,10vw,4rem)}}
+
+/* Use the same title scale for every artwork; pair CJK characters only when wrapping is needed. */
+.slide-title .title-pair{display:inline-block;white-space:nowrap}
+.slide.slide--landscape .slide-title,.slide.slide--portrait .slide-title,.slide--portrait[data-id="flash-bulb-memory"] .slide-title{font-size:clamp(1.7rem,3.2vw,4rem)}
+@media(max-width:800px){.slide.slide--landscape .slide-title,.slide.slide--portrait .slide-title,.slide--portrait[data-id="flash-bulb-memory"] .slide-title{font-size:clamp(2.5rem,10vw,4rem)}}
