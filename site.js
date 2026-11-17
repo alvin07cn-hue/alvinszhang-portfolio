@@ -97,8 +97,8 @@ const WORKS = [
     medium:{en:'Mixed media','zh-Hans':'综合媒介','zh-Hant':'綜合媒材'},
     statement:{
       en:"In China, Wenzhou people are known for their adventurous spirit. They possess the courage and unity akin to Capricorn, venturing worldwide for trade, but no matter how far they go, the belief in returning to their roots remains strong, and eventually, most Wenzhou people will return to their hometown.",
-      'zh-Hans':'作品以温州的开拓精神为起点，思考离乡之后仍然牵引着人的故土，以及最终回到根源的愿望。',
-      'zh-Hant':'作品以溫州的開拓精神為起點，思考離鄉之後仍然牽引著人的故土，以及最終回到根源的願望。'
+      'zh-Hans':"在中国，温州人以敢闯敢拼著称。他们拥有如摩羯座般的勇气和团结精神，走向世界各地经商。但无论走得多远，回归故土的信念始终坚定，最终大多数温州人都会回到家乡。",
+      'zh-Hant':"在中國，溫州人以敢闖敢拼著稱。他們擁有如摩羯座般的勇氣和團結精神，走向世界各地經商。但無論走得多遠，回歸故土的信念始終堅定，最終大多數溫州人都會回到家鄉。"
     }
   },
   {
@@ -107,8 +107,8 @@ const WORKS = [
     medium:{en:'Colored pencil','zh-Hans':'彩色铅笔','zh-Hant':'彩色鉛筆'},
     statement:{
       en:"My artwork employs boxwood as a metaphor for my hometown, acting as the structural support for both the courtyard and the composition of the painting. Within the piece, the traditional Suzhou courtyards are interwoven with the modern architecture of my hometown, symbolizing the deep roots of my soul in the land of my birth. Regardless of the changes in the era or the place where one resides, the connection to one’s hometown remains unbreakably close. I am of the belief that, much like the bark of a deciduous tree, we all eventually return to the soil that nurtured us at the end of life’s journey. In the end, we all end our days on our native soil.",
-      'zh-Hans':'黄杨木与庭院建筑交织成一片风景，让家乡成为可以随身携带的记忆，也让人与故土的联系跨越距离与变化。',
-      'zh-Hant':'黃楊木與庭院建築交織成一片風景，讓家鄉成為可以隨身攜帶的記憶，也讓人與故土的聯繫跨越距離與變化。'
+      'zh-Hans':"我以黄杨木隐喻家乡，它既是庭院的结构支撑，也是画面构图的支柱。传统苏州庭院与家乡的现代建筑交织，象征我的灵魂深深扎根于出生的土地。无论时代如何变迁，身居何处，人与家乡的联系始终亲密而牢固。我相信，我们如同落叶树的树皮，在生命旅程的终点，最终都会回到滋养我们的土地，归于故土。",
+      'zh-Hant':"我以黃楊木隱喻家鄉，它既是庭院的結構支撐，也是畫面構圖的支柱。傳統蘇州庭院與家鄉的現代建築交織，象徵我的靈魂深深扎根於出生的土地。無論時代如何變遷，身居何處，人與家鄉的聯繫始終親密而牢固。我相信，我們如同落葉樹的樹皮，在生命旅程的終點，最終都會回到滋養我們的土地，歸於故土。"
     }
   },
   {
@@ -117,12 +117,8 @@ const WORKS = [
     medium:{en:'Oil painting series · 2 works','zh-Hans':'油画系列 · 两张','zh-Hant':'油畫系列 · 兩張'},
     statement:{
       en:"Everyone holds a special place in their mind—not a point on a map, but a feeling. For me, it is an afternoon on Grandma’s sofa. In the first painting, the green carved sofa and the mountains and fields behind it are real; I have only ever seen this view from that seat, so the sofa becomes a doorway to my hometown. Red, the color of blessing and of blood ties, frames the scene, and the red dripping from its edge recalls the aerial roots of a banyan tree, slowly growing back into the soil. In the second painting, a Buddha’s head rises from banyan roots. He is calm, as if he has accepted impermanence, yet the roots still hold him. Understanding impermanence is one thing; letting go is another. The Buddha is at peace, but I am not. The roots are both a constraint and a support: they keep me from leaving entirely, and remind me where I am from.",
-      'zh-Hans':`每个人的记忆里都有一个特别的地方。对我而言，那是坐在奶奶沙发上的一个下午。画中的绿色沙发与窗外山野都是真实的；我只曾从那张沙发上看见那片风景。红色连接着家人与土地，滴落的线条像榕树气根，向下寻找土壤。
-
-第二幅画中，佛像被榕树根支撑，也被它们缠绕。佛教的“无常”提醒我，人、地方与记忆都会改变；但理解无常，不等于能够放下。这些根是牵绊，也是支撑，让我始终记得自己从何而来。`,
-      'zh-Hant':`每個人的記憶裡都有一個特別的地方。對我而言，那是坐在奶奶沙發上的一個下午。畫中的綠色沙發與窗外山野都是真實的；我只曾從那張沙發上看見那片風景。紅色連接著家人與土地，滴落的線條像榕樹氣根，向下尋找土壤。
-
-第二幅畫中，佛像被榕樹根支撐，也被它們纏繞。佛教的「無常」提醒我，人、地方與記憶都會改變；但理解無常，不等於能夠放下。這些根是牽絆，也是支撐，讓我始終記得自己從何而來。`
+      'zh-Hans':"每个人心中都有一个特别的地方——它不是地图上的一个点，而是一种感受。对我而言，那是奶奶沙发上的一个下午。第一幅画中，绿色雕花沙发和背后的山野都是真实的；我只曾从那个座位上看到这片风景，因此沙发成了一道通往家乡的门。红色象征祝福与血缘，环绕着画面；边缘滴落的红色使人想起榕树气根，缓缓伸回土壤。\n\n第二幅画中，佛首从榕树根中升起。佛像平静，仿佛已经接受无常，而根仍然紧紧缠绕。理解无常是一回事，真正放下又是另一回事。佛是平静的，但我不是。这些根既是束缚，也是支撑：它们让我无法彻底离开，也提醒我从何而来。",
+      'zh-Hant':"每個人心中都有一個特別的地方——它不是地圖上的一個點，而是一種感受。對我而言，那是奶奶沙發上的一個下午。第一幅畫中，綠色雕花沙發和背後的山野都是真實的；我只曾從那個座位上看到這片風景，因此沙發成了一道通往家鄉的門。紅色象徵祝福與血緣，環繞著畫面；邊緣滴落的紅色使人想起榕樹氣根，緩緩伸回土壤。\n\n第二幅畫中，佛首從榕樹根中升起。佛像平靜，彷彿已經接受無常，而根仍然緊緊纏繞。理解無常是一回事，真正放下又是另一回事。佛是平靜的，但我不是。這些根既是束縛，也是支撐：它們讓我無法徹底離開，也提醒我從何而來。"
     }
   },
   {
@@ -131,12 +127,8 @@ const WORKS = [
     medium:{en:'Oil painting','zh-Hans':'油画','zh-Hant':'油畫'},
     statement:{
       en:"This work continues my thinking about hometown, family, and childhood memory. The mountains are not only the scenery of my hometown; they also remind me of the time I spent with my grandmother. Remembered landscape and domestic space intertwine, becoming my way of understanding home. Unlike my earlier sofa and banyan tree works, I removed the flowing forms and focused on the mountains themselves, borrowing from Chinese landscape painting so they become imagined and reconstructed, not just a view through a window. Yellowish green feels ancient and distant, while pink feels contemporary, representing my present. Together, they show a hometown that is not frozen in the past, but a memory I keep revisiting and reinterpreting from where I stand now.",
-      'zh-Hans':`在我眼中，山是“家”的象征。我一直记得小时候依偎在奶奶身边，一起看窗外风景的情景。如今再想起，那片风景像梦一样，也让我想到自己第一次接触艺术时看到的中国画。
-
-画里的山仿佛悬浮着。记忆中的风景早已不再受窗户或物理空间的限制；它进入了家，也进入了我的心。我想留住的不只是当时看见的山，还有依偎在奶奶身边的感觉。`,
-      'zh-Hant':`在我眼中，山是「家」的象徵。我一直記得小時候依偎在奶奶身邊，一起看窗外風景的情景。如今再想起，那片風景像夢一樣，也讓我想到自己第一次接觸藝術時看到的中國畫。
-
-畫裡的山彷彿懸浮著。記憶中的風景早已不再受窗戶或物理空間的限制；它進入了家，也進入了我的心。我想留住的不只是當時看見的山，還有依偎在奶奶身邊的感覺。`
+      'zh-Hans':"这件作品延续了我对家乡、家庭与童年记忆的思考。山不仅是家乡的风景，也让我想起与奶奶共度的时光。记忆中的风景与家庭空间交织，成为我理解家的方式。不同于早期的沙发与榕树作品，我去掉了流动的形态，将注意力集中在山本身，借鉴中国山水画的语言，让山成为想象和重构的景象，而不只是窗外的风景。黄绿色带着古老与遥远的感觉，粉色则更为当代，代表我所处的现在。两者共同呈现的家乡并非凝固于过去，而是我从当下不断回望和重新诠释的记忆。",
+      'zh-Hant':"這件作品延續了我對家鄉、家庭與童年記憶的思考。山不僅是家鄉的風景，也讓我想起與奶奶共度的時光。記憶中的風景與家庭空間交織，成為我理解家的方式。不同於早期的沙發與榕樹作品，我去掉了流動的形態，將注意力集中在山本身，借鑑中國山水畫的語言，讓山成為想像和重構的景象，而不只是窗外的風景。黃綠色帶著古老與遙遠的感覺，粉色則更為當代，代表我所處的現在。兩者共同呈現的家鄉並非凝固於過去，而是我從當下不斷回望和重新詮釋的記憶。"
     }
   },
   {
@@ -145,8 +137,8 @@ const WORKS = [
     medium:{en:'Installation · mixed media','zh-Hans':'装置 · 综合媒介','zh-Hant':'裝置 · 綜合媒材'},
     statement:{
       en:"At that moment, time stands still, and memories are etched onto photographic paper, transforming into unforgettable fragments of memory amidst the flicker of white light. I explored the scene of my entering the state of examination, where anxiety filled my entire body, and sweat and tears flowed across my skin without leaving any trace. The wax in the installation amplifies this trace, making anxiety visible. The ongoing dissolution of the wax ultimately exposes a wire within the brain region, serving as a metaphor for the heightened state of mental tension. The light illuminates the entire scene, metaphorically acting as a flashlight, capturing the moment of memory. This allows viewers to resonate with my past worries and tension about exams.",
-      'zh-Hans':'蜡在悬置的形体上缓慢消融，光线像闪光灯一样定格考试焦虑的瞬间。材料把难以言说的紧张感变得可见。',
-      'zh-Hant':'蠟在懸置的形體上緩慢消融，光線像閃光燈一樣定格考試焦慮的瞬間。材料把難以言說的緊張感變得可見。'
+      'zh-Hans':"那一刻，时间静止，记忆被刻在相纸上，在闪烁的白光中化为难忘的片段。我探索自己进入考试状态时的场景：焦虑充满全身，汗水与泪水流过皮肤，却不留下痕迹。装置中的蜡放大了这些痕迹，使焦虑变得可见。蜡不断消融，最终露出大脑区域内部的电线，隐喻高度紧张的精神状态。光照亮整个场景，如同闪光灯定格记忆的瞬间，让观众感受到我过去面对考试时的担忧与紧张。",
+      'zh-Hant':"那一刻，時間靜止，記憶被刻在相紙上，在閃爍的白光中化為難忘的片段。我探索自己進入考試狀態時的場景：焦慮充滿全身，汗水與淚水流過皮膚，卻不留下痕跡。裝置中的蠟放大了這些痕跡，使焦慮變得可見。蠟不斷消融，最終露出大腦區域內部的電線，隱喻高度緊張的精神狀態。光照亮整個場景，如同閃光燈定格記憶的瞬間，讓觀眾感受到我過去面對考試時的擔憂與緊張。"
     }
   },
   {
@@ -155,8 +147,8 @@ const WORKS = [
     medium:{en:'Pencil drawing','zh-Hans':'铅笔素描','zh-Hant':'鉛筆素描'},
     statement:{
       en:"By closely observing the textures and details of withered leaves and dried bark, I present the changes in my thoughts and emotions. Fallen leaves land on the ground, and dead tree trunks fall to the earth to decay and become the soil that nurtures us. Life is the same; people are like leaves that leave the ground. And in the end, they all return to their homeland, giving back through their actions and nourishing the land that gave them life.",
-      'zh-Hans':'落叶与枯木回到泥土。这件素描通过自然的纹理，思考变化、消逝，以及始终留在心中的地方。',
-      'zh-Hant':'落葉與枯木回到泥土。這件素描透過自然的紋理，思考變化、消逝，以及始終留在心中的地方。'
+      'zh-Hans':"通过仔细观察枯叶和干树皮的纹理与细节，我呈现自己的思想和情感变化。落叶落到地面，枯树倒下，腐烂后成为滋养我们的土壤。生命亦是如此：人如同离开土地的叶子，最终都会回到故乡，通过自己的行动回馈并滋养孕育了我们的土地。",
+      'zh-Hant':"透過仔細觀察枯葉和乾樹皮的紋理與細節，我呈現自己的思想和情感變化。落葉落到地面，枯樹倒下，腐爛後成為滋養我們的土壤。生命亦是如此：人如同離開土地的葉子，最終都會回到故鄉，透過自己的行動回饋並滋養孕育了我們的土地。"
     }
   },
   {
@@ -165,8 +157,8 @@ const WORKS = [
     medium:{en:'Oil on canvas','zh-Hans':'布面油画','zh-Hant':'布面油畫'},
     statement:{
       en:"Through painting, I express my reverence for my grandmother’s generation. She wove the future with her hands. Distant buildings represent future pathways, emerging subtly in the sunrise. Ivy symbolizes vitality, and through her hands, my grandmother connected the present and the future, in the process of which our generation was born. We are protected within the vines.",
-      'zh-Hans':'这件作品向祖辈致敬。双手、常春藤与远处的城市，连起代际之间的照顾与生命力。',
-      'zh-Hant':'這件作品向祖輩致敬。雙手、常春藤與遠處的城市，連起世代之間的照顧與生命力。'
+      'zh-Hans':"我通过绘画表达对奶奶那一代人的敬意。她用双手编织未来。远处的建筑象征未来的道路，在初升的阳光中隐约显现。常春藤象征生命力；奶奶用双手连接了现在与未来，并在这个过程中孕育了我们这一代。我们被藤蔓保护着。",
+      'zh-Hant':"我透過繪畫表達對奶奶那一代人的敬意。她用雙手編織未來。遠處的建築象徵未來的道路，在初升的陽光中隱約顯現。常春藤象徵生命力；奶奶用雙手連接了現在與未來，並在這個過程中孕育了我們這一代。我們被藤蔓保護著。"
     }
   },
   {
@@ -175,8 +167,8 @@ const WORKS = [
     medium:{en:'Installation · mixed media','zh-Hans':'装置 · 综合媒介','zh-Hant':'裝置 · 綜合媒材'},
     statement:{
       en:"Life is like the water cycle, going through various choices and trials to form our unique life trajectories. In the artwork, the pages of a book, a light tube, and decaying plants symbolize the cycle of life and its hardships, hinting at the inevitable difficulties and stains in life. Looking back, it is these people who have overcome hardships that give life its color and meaning.",
-      'zh-Hans':'书页、光、树脂与植物构成层层叠叠的材料景观，借水的循环讲述人生经历留下的痕迹。',
-      'zh-Hant':'書頁、光、樹脂與植物構成層層疊疊的材料景觀，藉水的循環講述人生經歷留下的痕跡。'
+      'zh-Hans':"人生如同水循环，经历种种选择与考验，形成独特的人生轨迹。作品中的书页、灯管与腐朽的植物象征生命的循环与艰辛，暗示人生中不可避免的困难和污渍。回望过去，正是那些克服艰难困苦的人，赋予生命色彩与意义。",
+      'zh-Hant':"人生如同水循環，經歷種種選擇與考驗，形成獨特的人生軌跡。作品中的書頁、燈管與腐朽的植物象徵生命的循環與艱辛，暗示人生中不可避免的困難和污漬。回望過去，正是那些克服艱難困苦的人，賦予生命色彩與意義。"
     }
   },
   {
@@ -185,8 +177,8 @@ const WORKS = [
     medium:{en:'Digital work','zh-Hans':'数字创作','zh-Hant':'數位創作'},
     statement:{
       en:"As time passes, the feelings for my hometown will eventually become memories, and no matter how real they are, they will turn into virtual situations. All scenes containing elements of my hometown will become abstract and conceptual, yet the sentiment remains, shining brightly in my mind, as genuine and beautiful as a fairy tale.",
-      'zh-Hans':'随着时间流逝，我对故乡的感受渐渐成为记忆。无论它们曾经多么真实，回忆中的场景都会逐渐带上虚拟的质感。故乡的景象与元素变得抽象、观念化，但那份情感依然留在心中，明亮而真切，如童话般美好。',
-      'zh-Hant':'隨著時間流逝，我對故鄉的感受漸漸成為記憶。無論它們曾經多麼真實，回憶中的場景都會逐漸帶上虛擬的質感。故鄉的景象與元素變得抽象、觀念化，但那份情感依然留在心中，明亮而真切，如童話般美好。'
+      'zh-Hans':"随着时间流逝，我对家乡的感受终将成为记忆。无论它们曾经多么真实，最终都会变成虚拟的情境。所有包含家乡元素的场景都会变得抽象而观念化，但那份情感依然留在心中，明亮而真切，如童话般美好。",
+      'zh-Hant':"隨著時間流逝，我對家鄉的感受終將成為記憶。無論它們曾經多麼真實，最終都會變成虛擬的情境。所有包含家鄉元素的場景都會變得抽象而觀念化，但那份情感依然留在心中，明亮而真切，如童話般美好。"
     }
   }
 ];
@@ -298,9 +290,10 @@ function changeSlideImage(id,delta){
   slide.classList.toggle('slide--portrait',layout==='portrait');
 }
 
+const SECTION_STATEMENTS = {"origin":{"en":"In Chinese migratory culture, to leave is already to plan a return. These works scale down from the migration of Wenzhou traders, to the cultural order of Suzhou courtyards, to the biological fact of decay, asking what binds a person to an origin they have long outgrown. Home appears here not as a fixed site but as a gravitational field—cultural, ancestral, and biological—that continues to act at a distance. Between the restless impulse to venture out and the quiet certainty of being absorbed back into the land, the works hold mobility and rootedness in the same frame, and question whether return is a choice or a form of inheritance.","zh-Hans":"在中国的迁徙文化中，离开本身就包含着归来的计划。这些作品从温州商人的迁徙，到苏州庭院的文化秩序，再到衰败这一生物事实，逐级收窄尺度，追问一个人为何仍被他早已走出的原点束缚。故乡在此不是固定的地点，而是一个跨越距离仍在起作用的引力场，兼具文化、血缘与生物的层面。作品把“向外闯荡的躁动”与“终将被土地收回的笃定”放在同一画框内，并质疑：归返究竟是一种选择，还是一种继承？","zh-Hant":"在中國的遷徙文化中，離開本身就包含著歸來的計畫。這些作品從溫州商人的遷徙，到蘇州庭院的文化秩序，再到衰敗這一生物事實，逐級收窄尺度，追問一個人為何仍被他早已走出的原點束縛。故鄉在此不是固定的地點，而是一個跨越距離仍在起作用的引力場，兼具文化、血緣與生物的層面。作品把「向外闖蕩的躁動」與「終將被土地收回的篤定」放在同一畫框內，並質疑：歸返究竟是一種選擇，還是一種繼承？"},"interiors":{"en":"This group treats family not as subject matter but as a spatial structure through which memory is organized. Domestic furniture, a grandmother's labor, and a view from a window become thresholds between interior and landscape, between what was lived and what is later reconstructed. Drawing on Buddhist impermanence and the visual language of Chinese shanshui, the works examine a persistent contradiction: to understand that every attachment dissolves is not the same as being able to release it. Past and present are held in tension through color, revealing the remembered home as something continually remade from where the artist now stands, sustained by the very ties that complicate leaving.","zh-Hans":"这组作品不把家庭当作题材，而是当作组织记忆的空间结构。家具、祖母的劳作、窗外的视野，成为内部与风景、亲历与事后重构之间的门槛。作品借助佛教的“无常”与中国山水的视觉语言，探讨一个始终存在的矛盾：理解一切依恋终将消散，并不等于能够放下它。过去与当下通过色彩形成张力，让被记住的家显现为一个从“我如今所站的位置”不断重塑的对象，并被那些让离开变得困难的纽带所维系。","zh-Hant":"這組作品不把家庭當作題材，而是當作組織記憶的空間結構。家具、祖母的勞作、窗外的視野，成為內部與風景、親歷與事後重構之間的門檻。作品借助佛教的「無常」與中國山水的視覺語言，探討一個始終存在的矛盾：理解一切依戀終將消散，並不等於能夠放下它。過去與當下透過色彩形成張力，讓被記住的家顯現為一個從「我如今所站的位置」不斷重塑的對象，並被那些讓離開變得困難的紐帶所維繫。"},"residue":{"en":"Memory is rarely a stable archive; it behaves more like a material—one that melts, oxidizes, and leaves stains. These works trace how experience converts into residue and afterimage, whether as an instant seared by light, a life accumulated as marks, or a homeland drifting toward abstraction. Rather than recovering the past, they stage the processes by which it is distorted, preserved, and made visible: anxiety rendered as dissolving form, hardship as sediment, nostalgia as growing conceptual distance. The tension lies between the vividness of what is remembered and its inevitable decay, between the body that records and the time that erases.","zh-Hans":"记忆很少是稳定的档案，它更像一种会融化、氧化并留下污渍的材料。这些作品追踪经验如何转化为残留与余像：可能是被光灼刻的一瞬，是一生累积的痕迹，也可能是正在滑向抽象的故乡。它们不试图找回过去，而是呈现过去被扭曲、保存与显影的过程：焦虑化为消融的形态，困苦成为沉积物，乡愁变成不断拉长的观念距离。张力在于被记住之物的鲜明与其必然的衰退之间，在于会记录的身体与会抹去的时间之间。","zh-Hant":"記憶很少是穩定的檔案，它更像一種會融化、氧化並留下污漬的材料。這些作品追蹤經驗如何轉化為殘留與餘像：可能是被光灼刻的一瞬，是一生累積的痕跡，也可能是正在滑向抽象的故鄉。它們不試圖找回過去，而是呈現過去被扭曲、保存與顯影的過程：焦慮化為消融的形態，困苦成為沉積物，鄉愁變成不斷拉長的觀念距離。張力在於被記住之物的鮮明與其必然的衰退之間，在於會記錄的身體與會抹去的時間之間。"}};
 function renderCategories(){
   const container=byId('theme-list');
-  container.innerHTML=CATEGORIES.map((category,i)=>`<button type="button" class="theme-option" data-category="${category.id}" aria-pressed="${activeCategory===category.id}"><span class="theme-number">${String(i+1).padStart(2,'0')}</span><span>${category.label[locale]}</span><span class="theme-count">${String(category.id==='all'?WORKS.length:WORKS.filter(work=>work.category===category.id).length).padStart(2,'0')}</span></button>`).join('');
+  container.innerHTML=CATEGORIES.map((category,i)=>`<div class="theme-entry"><button type="button" class="theme-option" data-category="${category.id}" aria-pressed="${activeCategory===category.id}"><span class="theme-number">${String(i+1).padStart(2,'0')}</span><span>${category.label[locale]}</span><span class="theme-count">${String(category.id==='all'?WORKS.length:WORKS.filter(work=>work.category===category.id).length).padStart(2,'0')}</span></button>${SECTION_STATEMENTS[category.id]?`<details class="theme-description"><summary>${locale==='en'?'Read section statement':locale==='zh-Hans'?'阅读主题说明':'閱讀主題說明'}</summary><p>${SECTION_STATEMENTS[category.id][locale]}</p></details>`:''}</div>`).join('');
   container.querySelectorAll('.theme-option').forEach(option=>{
     option.addEventListener('pointerenter',()=>previewCategory(option.dataset.category));
     option.addEventListener('focus',()=>previewCategory(option.dataset.category));

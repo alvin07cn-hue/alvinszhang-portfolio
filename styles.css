@@ -209,3 +209,12 @@ body[data-page="about"]{overflow:auto}
  .about-fact{grid-template-columns:1fr;gap:1.3rem;padding:1.3rem 0 2.7rem}
  .about-fact .cv-list li{grid-template-columns:1fr;gap:.2rem;margin-bottom:1.3rem}
 }
+
+/* Theme descriptions remain accessible on touch screens. */
+.theme-list{padding-bottom:5rem}
+.theme-description{margin:.1rem 0 1.1rem 3.2rem;max-width:48rem;color:#111;font:400 clamp(1rem,1.35vw,1.25rem)/1.6 var(--serif)}
+.theme-description summary{font:400 .75rem/1.5 var(--sans);cursor:pointer;display:list-item}
+.theme-description p{margin:.8rem 0 0}
+.theme-panel .dialog-bottom{position:static;margin:0 3.2vw 2rem}
+@media(max-width:800px){.theme-list{margin-top:3rem}.theme-description{margin-left:2.4rem}.theme-preview{display:none}}
+@media(max-width:560px){.theme-option{font-size:clamp(1.8rem,7vw,2.5rem)}.theme-description{margin-left:1.8rem;font-size:1rem}}
