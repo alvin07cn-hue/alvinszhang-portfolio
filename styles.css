@@ -218,3 +218,26 @@ body[data-page="about"]{overflow:auto}
 .theme-panel .dialog-bottom{position:static;margin:0 3.2vw 2rem}
 @media(max-width:800px){.theme-list{margin-top:3rem}.theme-description{margin-left:2.4rem}.theme-preview{display:none}}
 @media(max-width:560px){.theme-option{font-size:clamp(1.8rem,7vw,2.5rem)}.theme-description{margin-left:1.8rem;font-size:1rem}}
+
+
+/* Writing pages */
+body.writing-page{overflow:auto}
+.writing-main{padding:clamp(8rem,15vh,11rem) 6vw 7rem;max-width:1440px;margin:auto}
+.writing-intro{display:grid;grid-template-columns:1.25fr 1fr;align-items:end;gap:3rem;margin-bottom:clamp(4rem,9vw,8rem)}
+.writing-kicker,.writing-list-head,.writing-number,.writing-entry small{font:400 .75rem/1.5 var(--mono);text-transform:uppercase;letter-spacing:.04em}
+.writing-intro h1{font:400 clamp(4rem,9vw,8rem)/.95 var(--serif);letter-spacing:-.05em;margin:1.3rem 0 0}
+.writing-intro p{font:400 clamp(1.2rem,2vw,1.8rem)/1.45 var(--serif);margin:0;max-width:28rem}
+.writing-accent{width:3rem;height:5px;background:#d6e98b;margin-bottom:1.25rem}
+.writing-list-head{display:flex;justify-content:space-between;border-bottom:1px solid #111;padding-bottom:1rem}
+.writing-entry{display:grid;grid-template-columns:4rem 1fr 2rem;gap:1.5rem;padding:2rem 0;border-bottom:1px solid #aaa;color:inherit;text-decoration:none}
+.writing-entry strong{font:400 clamp(1.5rem,2.7vw,2.6rem)/1.3 var(--serif);display:block;max-width:53rem;overflow-wrap:anywhere}
+.writing-entry small{display:block;color:#666;margin-top:.9rem}
+.writing-entry:hover strong{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.15em}
+.writing-arrow{text-align:right;font-size:1.5rem}
+.article-back a{color:inherit;font-size:.85rem;text-underline-offset:5px}
+.writing-article{max-width:850px;margin:4.5rem auto 0}
+.writing-article h1{font:400 clamp(2.2rem,5vw,4.6rem)/1.2 var(--serif);letter-spacing:-.025em;margin:1.4rem 0 2rem;overflow-wrap:anywhere}
+.article-body{font:400 clamp(1.1rem,1.4vw,1.3rem)/1.95 var(--serif);overflow-wrap:anywhere}
+.article-body p{margin:0 0 1.5em}.article-body h2{font:400 clamp(1.4rem,2vw,1.8rem)/1.4 var(--serif);margin:2.3em 0 .8em}
+@media(max-width:800px){.site-header{gap:.5rem}.site-nav{gap:.3rem}.nav-button{font-size:.8rem}}
+@media(max-width:560px){.site-header .brand{width:auto;flex:1}.site-nav{width:auto;flex:none;gap:.35rem}.site-header .nav-button{font-size:.75rem;padding:9px 2px}.writing-main{padding:8rem 5vw 5rem}.writing-intro{grid-template-columns:1fr;gap:2rem;margin-bottom:3rem}.writing-entry{grid-template-columns:2rem 1fr 1.2rem;gap:.5rem}.writing-article{margin-top:3rem}.article-body{font-size:1.08rem;line-height:1.9}}

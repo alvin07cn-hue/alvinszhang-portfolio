@@ -1,7 +1,7 @@
 const LANGUAGES = ['en', 'zh-Hans', 'zh-Hant'];
 const UI = {
   en: {
-    index: 'Index', about: 'About', works: 'Works', scroll: 'Scroll to explore ↓',
+    index: 'Works', writing: 'Writing', about: 'About', works: 'Works', scroll: 'Scroll to explore ↓',
     view: 'View full image', read: 'Read about this work', back: 'Back to first work',
     themes: 'Index / Themes', themeHint: 'Hover to preview · Select to filter',
     showAll: 'Show all works',
@@ -28,7 +28,7 @@ const UI = {
     ]
   },
   'zh-Hans': {
-    index: '索引', about: '关于', works: '作品', scroll: '向下探索 ↓',
+    index: '作品', writing: '写作', about: '关于', works: '作品', scroll: '向下探索 ↓',
     view: '查看完整作品', read: '阅读作品说明', back: '回到第一件作品',
     themes: '索引 / 主题', themeHint: '悬停预览 · 点击筛选',
     showAll: '查看全部作品',
@@ -55,7 +55,7 @@ const UI = {
     ]
   },
   'zh-Hant': {
-    index: '索引', about: '關於', works: '作品', scroll: '向下探索 ↓',
+    index: '作品', writing: '寫作', about: '關於', works: '作品', scroll: '向下探索 ↓',
     view: '檢視完整作品', read: '閱讀作品說明', back: '回到第一件作品',
     themes: '索引 / 主題', themeHint: '懸停預覽 · 點擊篩選',
     showAll: '檢視全部作品',
@@ -212,6 +212,7 @@ function setLanguage(next){
   document.querySelectorAll('.language-switch button').forEach(button => button.setAttribute('aria-pressed',String(button.dataset.lang===locale)));
   document.querySelectorAll('.language-switch').forEach(group => group.setAttribute('aria-label',t('language')));
   setText('about-link',t('about'));
+  setText('writing-link',t('writing'));
   setText('work-link',t('works'));
   setText('about-label',t('about'));
   const skip=document.querySelector('.skip-link'); if(skip) skip.textContent=t(page==='works'?'skipWorks':'skipAbout');
@@ -481,3 +482,4 @@ if(page==='works'){
   if(workFor(hash))activeWork=hash;
 }
 setLanguage(locale);
+
