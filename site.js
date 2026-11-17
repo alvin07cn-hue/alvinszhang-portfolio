@@ -116,9 +116,7 @@ const WORKS = [
     title:{en:'The Roots Remember','zh-Hans':'根仍记得','zh-Hant':'根仍記得'},
     medium:{en:'Oil painting series · 2 works','zh-Hans':'油画系列 · 两张','zh-Hant':'油畫系列 · 兩張'},
     statement:{
-      en:`Everyone has a place that lives in memory. For me, it is an afternoon on my grandmother’s sofa. The carved green sofa and the mountains beyond her window are real; I knew that landscape only from that seat. Red connects family ties to the land, while its drips echo banyan roots reaching down toward the soil.
-
-In the second painting, a Buddha’s head is both supported and entangled by banyan roots. Buddhism’s idea of impermanence reminds me that people, places, and memories change. Understanding that is one thing; letting go is another. The roots both bind and sustain me, reminding me where I come from.`,
+      en:"Everyone holds a special place in their mind—not a point on a map, but a feeling. For me, it is an afternoon on Grandma’s sofa. In the first painting, the green carved sofa and the mountains and fields behind it are real; I have only ever seen this view from that seat, so the sofa becomes a doorway to my hometown. Red, the color of blessing and of blood ties, frames the scene, and the red dripping from its edge recalls the aerial roots of a banyan tree, slowly growing back into the soil. In the second painting, a Buddha’s head rises from banyan roots. He is calm, as if he has accepted impermanence, yet the roots still hold him. Understanding impermanence is one thing; letting go is another. The Buddha is at peace, but I am not. The roots are both a constraint and a support: they keep me from leaving entirely, and remind me where I am from.",
       'zh-Hans':`每个人的记忆里都有一个特别的地方。对我而言，那是坐在奶奶沙发上的一个下午。画中的绿色沙发与窗外山野都是真实的；我只曾从那张沙发上看见那片风景。红色连接着家人与土地，滴落的线条像榕树气根，向下寻找土壤。
 
 第二幅画中，佛像被榕树根支撑，也被它们缠绕。佛教的“无常”提醒我，人、地方与记忆都会改变；但理解无常，不等于能够放下。这些根是牵绊，也是支撑，让我始终记得自己从何而来。`,
@@ -132,9 +130,7 @@ In the second painting, a Buddha’s head is both supported and entangled by ban
     title:{en:'Mountains in the Room','zh-Hans':'山在屋里','zh-Hant':'山在屋裡'},
     medium:{en:'Oil painting','zh-Hans':'油画','zh-Hant':'油畫'},
     statement:{
-      en:`To me, mountains are a symbol of home. I remember leaning against my grandmother as we looked out at the landscape together. In my memory, the view beyond the window feels like a dream, much like the Chinese paintings through which I first encountered art.
-
-In this painting, the mountains seem to float. The remembered landscape is no longer contained by the window or by physical space. It has entered the home, and it has entered my heart. I want to hold on not only to what I saw, but also to the feeling of being beside my grandmother.`,
+      en:"This work continues my thinking about hometown, family, and childhood memory. The mountains are not only the scenery of my hometown; they also remind me of the time I spent with my grandmother. Remembered landscape and domestic space intertwine, becoming my way of understanding home. Unlike my earlier sofa and banyan tree works, I removed the flowing forms and focused on the mountains themselves, borrowing from Chinese landscape painting so they become imagined and reconstructed, not just a view through a window. Yellowish green feels ancient and distant, while pink feels contemporary, representing my present. Together, they show a hometown that is not frozen in the past, but a memory I keep revisiting and reinterpreting from where I stand now.",
       'zh-Hans':`在我眼中，山是“家”的象征。我一直记得小时候依偎在奶奶身边，一起看窗外风景的情景。如今再想起，那片风景像梦一样，也让我想到自己第一次接触艺术时看到的中国画。
 
 画里的山仿佛悬浮着。记忆中的风景早已不再受窗户或物理空间的限制；它进入了家，也进入了我的心。我想留住的不只是当时看见的山，还有依偎在奶奶身边的感觉。`,
