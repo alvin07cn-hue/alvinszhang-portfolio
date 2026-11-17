@@ -186,6 +186,12 @@ const WORKS = [
 const DISPLAY_ORDER = ['urban-spirit','bonsai','season-change','hands','untitled-painting-series','untitled-painting','flash-bulb-memory','the-thread-of-fate','manifest'];
 const ORDERED_WORKS = DISPLAY_ORDER.map(id => WORKS.find(work => work.id === id));
 
+function formatWorkTitle(title){
+  if(locale!=='en' && /^[一-鿿]{4}$/u.test(title)){
+    return '<span class="title-pair">'+title.slice(0,2)+'</span><span class="title-pair">'+title.slice(2)+'</span>';
+  }
+  return title;
+}
 const byId = id => document.getElementById(id);
 const page = document.body.dataset.page;
 let locale = LANGUAGES.includes(localStorage.getItem('portfolio-language')) ? localStorage.getItem('portfolio-language') : 'en';
@@ -237,7 +243,7 @@ function renderWorks(){
       <div class="slide-panel">
         <p class="slide-kicker">${String(i+1).padStart(2,'0')} / ${String(works.length).padStart(2,'0')} &nbsp; ${category.label[locale]}</p>
         <span class="slide-accent" aria-hidden="true"></span>
-        <h2 class="slide-title">${work.title[locale]}</h2>
+        <h2 class="slide-title">${formatWorkTitle(work.title[locale])}</h2>
         <p class="slide-medium">${work.medium[locale]}</p>
         ${work.images.length>1?`<div class="slide-carousel" aria-label="${work.title[locale]}"><button type="button" data-slide-prev="${work.id}" aria-label="${t('previous')}">←</button><span class="slide-image-count">${currentImage+1} / ${work.images.length}</span><button type="button" data-slide-next="${work.id}" aria-label="${t('next')}">→</button></div>`:''}
         <div class="slide-actions"><button type="button" data-view="${work.id}">${t('view')}</button>${work.statement?`<button type="button" data-info="${work.id}">${t('read')}</button>`:''}</div>

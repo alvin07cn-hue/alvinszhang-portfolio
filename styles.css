@@ -241,3 +241,10 @@ body.writing-page{overflow:auto}
 .article-body p{margin:0 0 1.5em}.article-body h2{font:400 clamp(1.4rem,2vw,1.8rem)/1.4 var(--serif);margin:2.3em 0 .8em}
 @media(max-width:800px){.site-header{gap:.5rem}.site-nav{gap:.3rem}.nav-button{font-size:.8rem}}
 @media(max-width:560px){.site-header .brand{width:auto;flex:1}.site-nav{width:auto;flex:none;gap:.35rem}.site-header .nav-button{font-size:.75rem;padding:9px 2px}.writing-main{padding:8rem 5vw 5rem}.writing-intro{grid-template-columns:1fr;gap:2rem;margin-bottom:3rem}.writing-entry{grid-template-columns:2rem 1fr 1.2rem;gap:.5rem}.writing-article{margin-top:3rem}.article-body{font-size:1.08rem;line-height:1.9}}
+
+/* Keep English words intact and balance four-character Chinese titles. */
+.slide-title{overflow-wrap:normal;word-break:normal;hyphens:none}
+.slide-title .title-pair{display:block;white-space:nowrap}
+.slide--portrait .slide-title,.slide--portrait[data-id="flash-bulb-memory"] .slide-title{font-size:clamp(1.7rem,3.2vw,4rem)}
+@media(max-width:800px){.slide--portrait .slide-title,.slide--portrait[data-id="flash-bulb-memory"] .slide-title{font-size:clamp(3.2rem,10vw,5rem)}}
+@media(max-width:560px){.slide--portrait .slide-title,.slide--portrait[data-id="flash-bulb-memory"] .slide-title{font-size:clamp(2.5rem,10vw,4rem)}}
