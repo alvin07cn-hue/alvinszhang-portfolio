@@ -3,7 +3,7 @@ const UI = {
   en: {
     index: 'Index', about: 'About', works: 'Works', scroll: 'Scroll to explore ↓',
     view: 'View full image', read: 'Read about this work', back: 'Back to first work',
-    themes: 'Index / Media', themeHint: 'Hover to preview · Select to filter',
+    themes: 'Index / Themes', themeHint: 'Hover to preview · Select to filter',
     showAll: 'Show all works',
     closeIndex: 'Close index', closeInfo: 'Close information', closeViewer: 'Close viewer',
     zoomIn: 'Zoom in', zoomOut: 'Zoom out', fit: 'Fit', close: 'Close ×',
@@ -30,7 +30,7 @@ const UI = {
   'zh-Hans': {
     index: '索引', about: '关于', works: '作品', scroll: '向下探索 ↓',
     view: '查看完整作品', read: '阅读作品说明', back: '回到第一件作品',
-    themes: '索引 / 媒介', themeHint: '悬停预览 · 点击筛选',
+    themes: '索引 / 主题', themeHint: '悬停预览 · 点击筛选',
     showAll: '查看全部作品',
     closeIndex: '关闭索引', closeInfo: '关闭说明', closeViewer: '关闭图片',
     zoomIn: '放大', zoomOut: '缩小', fit: '适合屏幕', close: '关闭 ×',
@@ -57,7 +57,7 @@ const UI = {
   'zh-Hant': {
     index: '索引', about: '關於', works: '作品', scroll: '向下探索 ↓',
     view: '檢視完整作品', read: '閱讀作品說明', back: '回到第一件作品',
-    themes: '索引 / 媒材', themeHint: '懸停預覽 · 點擊篩選',
+    themes: '索引 / 主題', themeHint: '懸停預覽 · 點擊篩選',
     showAll: '檢視全部作品',
     closeIndex: '關閉索引', closeInfo: '關閉說明', closeViewer: '關閉圖片',
     zoomIn: '放大', zoomOut: '縮小', fit: '符合螢幕', close: '關閉 ×',
@@ -85,15 +85,14 @@ const UI = {
 
 const CATEGORIES = [
   {id:'all', label:{en:'All works','zh-Hans':'全部作品','zh-Hant':'全部作品'}, preview:'urban-main.jpg'},
-  {id:'painting', label:{en:'Painting','zh-Hans':'绘画','zh-Hant':'繪畫'}, preview:'oil-4856.jpg'},
-  {id:'drawing', label:{en:'Drawing','zh-Hans':'素描','zh-Hant':'素描'}, preview:'bonsai-main.jpg'},
-  {id:'installation', label:{en:'Installation & mixed media','zh-Hans':'装置与综合媒介','zh-Hant':'裝置與綜合媒材'}, preview:'thread-main.jpg'},
-  {id:'digital', label:{en:'Digital','zh-Hans':'数字作品','zh-Hant':'數位作品'}, preview:'digital-one.jpg'}
+  {id:'origin', label:{en:'The Gravity of Origin','zh-Hans':'原乡的引力','zh-Hant':'原鄉的引力'}, preview:'bonsai-main.jpg'},
+  {id:'interiors', label:{en:'Inherited Interiors','zh-Hans':'承袭的内景','zh-Hant':'承襲的內景'}, preview:'oil-4856.jpg'},
+  {id:'residue', label:{en:'Residue and Afterimage','zh-Hans':'残留与余像','zh-Hant':'殘留與餘像'}, preview:'flash-main.jpg'}
 ];
 
 const WORKS = [
   {
-    id:'urban-spirit', category:'installation', layout:'landscape', tone:'light', images:['urban-main.jpg'],
+    id:'urban-spirit', category:'origin', layout:'landscape', tone:'light', images:['urban-main.jpg'],
     title:{en:'Urban Spirit','zh-Hans':'城市精神','zh-Hant':'城市精神'},
     medium:{en:'Mixed media','zh-Hans':'综合媒介','zh-Hant':'綜合媒材'},
     statement:{
@@ -103,7 +102,7 @@ const WORKS = [
     }
   },
   {
-    id:'bonsai', category:'drawing', layout:'portrait', tone:'light', images:['bonsai-main.jpg'],
+    id:'bonsai', category:'origin', layout:'portrait', tone:'light', images:['bonsai-main.jpg'],
     title:{en:'Bonsai','zh-Hans':'盆景','zh-Hant':'盆景'},
     medium:{en:'Colored pencil','zh-Hans':'彩色铅笔','zh-Hant':'彩色鉛筆'},
     statement:{
@@ -113,7 +112,7 @@ const WORKS = [
     }
   },
   {
-    id:'untitled-painting-series', category:'painting', layout:'portrait', imageLayouts:['portrait','landscape'], tone:'light', images:['oil-4856.jpg','oil-4854.jpg'],
+    id:'untitled-painting-series', category:'interiors', layout:'portrait', imageLayouts:['portrait','landscape'], tone:'light', images:['oil-4856.jpg','oil-4854.jpg'],
     title:{en:'The Roots Remember','zh-Hans':'根仍记得','zh-Hant':'根仍記得'},
     medium:{en:'Oil painting series · 2 works','zh-Hans':'油画系列 · 两张','zh-Hant':'油畫系列 · 兩張'},
     statement:{
@@ -129,7 +128,7 @@ In the second painting, a Buddha’s head is both supported and entangled by ban
     }
   },
   {
-    id:'untitled-painting', category:'painting', layout:'portrait', tone:'light', images:['oil-6114.jpg'],
+    id:'untitled-painting', category:'interiors', layout:'portrait', tone:'light', images:['oil-6114.jpg'],
     title:{en:'Mountains in the Room','zh-Hans':'山在屋里','zh-Hant':'山在屋裡'},
     medium:{en:'Oil painting','zh-Hans':'油画','zh-Hant':'油畫'},
     statement:{
@@ -145,7 +144,7 @@ In this painting, the mountains seem to float. The remembered landscape is no lo
     }
   },
   {
-    id:'flash-bulb-memory', category:'installation', layout:'portrait', tone:'dark', accent:true, images:['flash-main.jpg','flash-detail.jpg','flash-hanging.jpg'],
+    id:'flash-bulb-memory', category:'residue', layout:'portrait', tone:'dark', accent:true, images:['flash-main.jpg','flash-detail.jpg','flash-hanging.jpg'],
     title:{en:'Flash-bulb Memory','zh-Hans':'闪光灯记忆','zh-Hant':'閃光燈記憶'},
     medium:{en:'Installation · mixed media','zh-Hans':'装置 · 综合媒介','zh-Hant':'裝置 · 綜合媒材'},
     statement:{
@@ -155,7 +154,7 @@ In this painting, the mountains seem to float. The remembered landscape is no lo
     }
   },
   {
-    id:'season-change', category:'drawing', layout:'portrait', tone:'light', images:['season-main.jpg','season-second.jpg'],
+    id:'season-change', category:'origin', layout:'portrait', tone:'light', images:['season-main.jpg','season-second.jpg'],
     title:{en:'Season Change','zh-Hans':'季节更迭','zh-Hant':'季節更迭'},
     medium:{en:'Pencil drawing','zh-Hans':'铅笔素描','zh-Hant':'鉛筆素描'},
     statement:{
@@ -165,7 +164,7 @@ In this painting, the mountains seem to float. The remembered landscape is no lo
     }
   },
   {
-    id:'hands', category:'painting', layout:'portrait', tone:'light', images:['hands-main.jpg'],
+    id:'hands', category:'interiors', layout:'portrait', tone:'light', images:['hands-main.jpg'],
     title:{en:'Hands','zh-Hans':'手','zh-Hant':'手'},
     medium:{en:'Oil on canvas','zh-Hans':'布面油画','zh-Hant':'布面油畫'},
     statement:{
@@ -175,7 +174,7 @@ In this painting, the mountains seem to float. The remembered landscape is no lo
     }
   },
   {
-    id:'the-thread-of-fate', category:'installation', layout:'portrait', tone:'dark', accent:true, images:['thread-main.jpg','thread-detail.jpg','thread-process.jpg'],
+    id:'the-thread-of-fate', category:'residue', layout:'portrait', tone:'dark', accent:true, images:['thread-main.jpg','thread-detail.jpg','thread-process.jpg'],
     title:{en:'The Thread of Fate','zh-Hans':'命运之线','zh-Hant':'命運之線'},
     medium:{en:'Installation · mixed media','zh-Hans':'装置 · 综合媒介','zh-Hant':'裝置 · 綜合媒材'},
     statement:{
@@ -185,7 +184,7 @@ In this painting, the mountains seem to float. The remembered landscape is no lo
     }
   },
   {
-    id:'manifest', category:'digital', layout:'landscape', tone:'dark', accent:true, images:['digital-one.jpg','digital-two.jpg'],
+    id:'manifest', category:'residue', layout:'landscape', tone:'dark', accent:true, images:['digital-one.jpg','digital-two.jpg'],
     title:{en:'Manifest','zh-Hans':'显现','zh-Hant':'顯現'},
     medium:{en:'Digital work','zh-Hans':'数字创作','zh-Hant':'數位創作'},
     statement:{
@@ -196,11 +195,7 @@ In this painting, the mountains seem to float. The remembered landscape is no lo
   }
 ];
 
-const DISPLAY_ORDER = [
-  'urban-spirit', 'bonsai', 'manifest', 'the-thread-of-fate',
-  'untitled-painting', 'flash-bulb-memory', 'untitled-painting-series',
-  'hands', 'season-change'
-];
+const DISPLAY_ORDER = ['urban-spirit','bonsai','season-change','hands','untitled-painting-series','untitled-painting','flash-bulb-memory','the-thread-of-fate','manifest'];
 const ORDERED_WORKS = DISPLAY_ORDER.map(id => WORKS.find(work => work.id === id));
 
 const byId = id => document.getElementById(id);
