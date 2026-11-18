@@ -268,3 +268,18 @@ body.writing-page{overflow:auto}
  .slide--portrait .slide-actions button{display:inline-block;margin:0}
 }
 @media(max-width:560px){.slide--portrait .slide-panel{padding:calc(1rem + 6px) calc(1.1rem + 12px) calc(1rem + 6px) 1.1rem}}
+
+/* Compact mobile labels and predictable carousel buttons on touch screens. */
+@media(max-width:560px){
+ .slide--landscape .slide-panel,.slide--portrait .slide-panel{max-width:min(76%,450px)}
+ .slide-actions{flex-wrap:wrap;row-gap:.7rem}
+}
+.slide-carousel button{flex:none}
+@media(hover:none){
+ .slide-carousel button:hover,.slide--dark .slide-carousel button:hover{background:transparent;color:inherit}
+}
+
+/* Keep hover contrast correct even when a touch browser retains hover state. */
+.slide--light .slide-carousel button:hover{background:#111;color:#fff}
+.slide--dark .slide-carousel button:hover{background:#fff;color:#111}
+@media(hover:none){.slide--light .slide-carousel button:hover,.slide--dark .slide-carousel button:hover{background:transparent;color:inherit}}
