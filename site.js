@@ -273,20 +273,36 @@ function renderWorks(){
 }
 
 function fitWorkTitles(){
-  const canvas=document.createElement('canvas');
-  const context=canvas.getContext('2d');
-  if(!context)return;
-  document.querySelectorAll('.slide-title').forEach(title=>{
-    title.style.removeProperty('font-size');
-    const style=getComputedStyle(title);
-    const size=parseFloat(style.fontSize);
-    const words=locale==='en' ? title.textContent.trim().split(/\s+/) : [...title.querySelectorAll('.title-pair')].map(el=>el.textContent);
-    if(!words.length || !title.clientWidth)return;
-    context.font=style.font;
-    const widest=Math.max(...words.map(word=>context.measureText(word).width));
-    if(widest>title.clientWidth) title.style.fontSize=(size*title.clientWidth/widest*.98)+'px';
-  });
+  const titles=[...document.querySelectorAll('.slide-title')];
+  const canvas=document.createElement('canvas'), context=canvas.getContext('2d');
+  if(!context || !titles.length)return;
+  titles.forEach(title=>title.style.removeProperty('font-size'));
+  const portrait=titles.find(title=>title.closest('.slide--portrait') && title.closest('.slide').dataset.id!=='flash-bulb-memory') || titles[0];
+  const style=getComputedStyle(portrait);
+  const baseSize=parseFloat(style.fontSize);
+  const portraitWidths=titles.filter(title=>title.closest('.slide--portrait')).map(title=>title.clientWidth);
+  const referenceWidth=portraitWidths.length ? Math.min(...portraitWidths) : portrait.clientWidth;
+  context.font=style.font;
+  const pieces=text=>{
+    if(locale==='en')return text.trim().split(/\s+/);
+    return /^[一-鿿]{4}$/u.test(text) ? [text.slice(0,2),text.slice(2)] : [...text];
+  };
+  let scale=1;
+  for(const work of WORKS){
+    for(const part of [...pieces(work.title[locale]), ...work.title.en.trim().split(/\s+/)]){
+      const width=context.measureText(part).width;
+      if(width>referenceWidth)scale=Math.min(scale,referenceWidth/width*.98);
+    }
+  }
+  for(const title of titles){
+    for(const part of pieces(title.textContent)){
+      const width=context.measureText(part).width;
+      if(width>title.clientWidth)scale=Math.min(scale,title.clientWidth/width*.98);
+    }
+  }
+  titles.forEach(title=>title.style.fontSize=(baseSize*scale)+'px');
 }
+
 function updateActiveSlide(){
   const gallery=byId('gallery');
   const midpoint=gallery.getBoundingClientRect().top+gallery.clientHeight/2;
