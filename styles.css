@@ -260,3 +260,11 @@ body.writing-page{overflow:auto}
 .slide--landscape .slide-panel{padding-top:calc(1.65rem + 6px);padding-right:calc(2.7rem + 12px);padding-bottom:calc(1.7rem + 6px)}
 @media(max-width:800px){.slide--landscape .slide-panel{padding-top:calc(1.3rem + 6px);padding-right:calc(1.4rem + 12px);padding-bottom:calc(1.3rem + 6px)}}
 @media(max-width:560px){.slide--landscape .slide-panel{padding-top:calc(1rem + 6px);padding-right:calc(1.1rem + 12px);padding-bottom:calc(1rem + 6px)}}
+
+/* On smaller screens, portrait labels size to their contents like landscape labels. */
+@media(max-width:800px){
+ .slide--portrait .slide-panel{width:max-content;max-width:min(90%,450px);padding:calc(1.3rem + 6px) calc(1.4rem + 12px) calc(1.3rem + 6px) 1.4rem}
+ .slide--portrait .slide-actions{display:flex;flex-wrap:wrap;gap:.7rem 1.4rem;margin-top:1.2rem}
+ .slide--portrait .slide-actions button{display:inline-block;margin:0}
+}
+@media(max-width:560px){.slide--portrait .slide-panel{padding:calc(1rem + 6px) calc(1.1rem + 12px) calc(1rem + 6px) 1.1rem}}
