@@ -245,3 +245,8 @@ body.writing-page{overflow:auto}
 /* Wrap only between whole words or Chinese character pairs. */
 .slide-title{overflow-wrap:normal;word-break:normal;hyphens:none}
 .slide-title .title-pair{display:inline-block;white-space:nowrap}
+
+/* Match the two landscape titles to the portrait title scale. */
+.slide--landscape .slide-title{font-size:clamp(3.1rem,5.2vw,6.6rem)}
+@media(max-width:800px){.slide--landscape .slide-title{font-size:clamp(3.2rem,12vw,5.6rem)}}
+@media(max-width:560px){.slide--landscape .slide-title{font-size:clamp(2.7rem,11vw,4.5rem)}}
