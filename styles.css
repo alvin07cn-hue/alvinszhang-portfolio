@@ -255,3 +255,8 @@ body.writing-page{overflow:auto}
 .slide--landscape .slide-panel{min-width:0;width:max-content;max-width:min(43%,590px)}
 @media(max-width:800px){.slide--landscape .slide-panel{max-width:80%}.slide--portrait .slide-panel{width:min(76%,450px)}}
 @media(max-width:560px){.slide--landscape .slide-panel{max-width:90%}.slide--portrait .slide-panel{width:min(76%,450px)}}
+
+/* Add a little breathing room to landscape artwork labels. */
+.slide--landscape .slide-panel{padding-top:calc(1.65rem + 6px);padding-right:calc(2.7rem + 12px);padding-bottom:calc(1.7rem + 6px)}
+@media(max-width:800px){.slide--landscape .slide-panel{padding-top:calc(1.3rem + 6px);padding-right:calc(1.4rem + 12px);padding-bottom:calc(1.3rem + 6px)}}
+@media(max-width:560px){.slide--landscape .slide-panel{padding-top:calc(1rem + 6px);padding-right:calc(1.1rem + 12px);padding-bottom:calc(1rem + 6px)}}
