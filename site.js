@@ -269,9 +269,24 @@ function renderWorks(){
   setText('work-kicker',t('info'));
   updateViewerText();
   const target=byId(activeWork);
-  requestAnimationFrame(()=>{ if(target) gallery.scrollTop=target.offsetTop; updateActiveSlide(); });
+  requestAnimationFrame(()=>{ if(target) gallery.scrollTop=target.offsetTop; fitWorkTitles(); updateActiveSlide(); });
 }
 
+function fitWorkTitles(){
+  const canvas=document.createElement('canvas');
+  const context=canvas.getContext('2d');
+  if(!context)return;
+  document.querySelectorAll('.slide-title').forEach(title=>{
+    title.style.removeProperty('font-size');
+    const style=getComputedStyle(title);
+    const size=parseFloat(style.fontSize);
+    const words=locale==='en' ? title.textContent.trim().split(/\s+/) : [...title.querySelectorAll('.title-pair')].map(el=>el.textContent);
+    if(!words.length || !title.clientWidth)return;
+    context.font=style.font;
+    const widest=Math.max(...words.map(word=>context.measureText(word).width));
+    if(widest>title.clientWidth) title.style.fontSize=(size*title.clientWidth/widest*.98)+'px';
+  });
+}
 function updateActiveSlide(){
   const gallery=byId('gallery');
   const midpoint=gallery.getBoundingClientRect().top+gallery.clientHeight/2;
@@ -295,6 +310,7 @@ function changeSlideImage(id,delta){
   const layout=work.imageLayouts?.[slideImageIndices[id]] || work.layout;
   slide.classList.toggle('slide--landscape',layout==='landscape');
   slide.classList.toggle('slide--portrait',layout==='portrait');
+  requestAnimationFrame(fitWorkTitles);
 }
 
 const SECTION_STATEMENTS = {"origin":{"en":"In Chinese migratory culture, to leave is already to plan a return. These works scale down from the migration of Wenzhou traders, to the cultural order of Suzhou courtyards, to the biological fact of decay, asking what binds a person to an origin they have long outgrown. Home appears here not as a fixed site but as a gravitational field—cultural, ancestral, and biological—that continues to act at a distance. Between the restless impulse to venture out and the quiet certainty of being absorbed back into the land, the works hold mobility and rootedness in the same frame, and question whether return is a choice or a form of inheritance.","zh-Hans":"在中国的迁徙文化中，离开本身就包含着归来的计划。这些作品从温州商人的迁徙，到苏州庭院的文化秩序，再到衰败这一生物事实，逐级收窄尺度，追问一个人为何仍被他早已走出的原点束缚。故乡在此不是固定的地点，而是一个跨越距离仍在起作用的引力场，兼具文化、血缘与生物的层面。作品把“向外闯荡的躁动”与“终将被土地收回的笃定”放在同一画框内，并质疑：归返究竟是一种选择，还是一种继承？","zh-Hant":"在中國的遷徙文化中，離開本身就包含著歸來的計畫。這些作品從溫州商人的遷徙，到蘇州庭院的文化秩序，再到衰敗這一生物事實，逐級收窄尺度，追問一個人為何仍被他早已走出的原點束縛。故鄉在此不是固定的地點，而是一個跨越距離仍在起作用的引力場，兼具文化、血緣與生物的層面。作品把「向外闖蕩的躁動」與「終將被土地收回的篤定」放在同一畫框內，並質疑：歸返究竟是一種選擇，還是一種繼承？"},"interiors":{"en":"This group treats family not as subject matter but as a spatial structure through which memory is organized. Domestic furniture, a grandmother's labor, and a view from a window become thresholds between interior and landscape, between what was lived and what is later reconstructed. Drawing on Buddhist impermanence and the visual language of Chinese shanshui, the works examine a persistent contradiction: to understand that every attachment dissolves is not the same as being able to release it. Past and present are held in tension through color, revealing the remembered home as something continually remade from where the artist now stands, sustained by the very ties that complicate leaving.","zh-Hans":"这组作品不把家庭当作题材，而是当作组织记忆的空间结构。家具、祖母的劳作、窗外的视野，成为内部与风景、亲历与事后重构之间的门槛。作品借助佛教的“无常”与中国山水的视觉语言，探讨一个始终存在的矛盾：理解一切依恋终将消散，并不等于能够放下它。过去与当下通过色彩形成张力，让被记住的家显现为一个从“我如今所站的位置”不断重塑的对象，并被那些让离开变得困难的纽带所维系。","zh-Hant":"這組作品不把家庭當作題材，而是當作組織記憶的空間結構。家具、祖母的勞作、窗外的視野，成為內部與風景、親歷與事後重構之間的門檻。作品借助佛教的「無常」與中國山水的視覺語言，探討一個始終存在的矛盾：理解一切依戀終將消散，並不等於能夠放下它。過去與當下透過色彩形成張力，讓被記住的家顯現為一個從「我如今所站的位置」不斷重塑的對象，並被那些讓離開變得困難的紐帶所維繫。"},"residue":{"en":"Memory is rarely a stable archive; it behaves more like a material—one that melts, oxidizes, and leaves stains. These works trace how experience converts into residue and afterimage, whether as an instant seared by light, a life accumulated as marks, or a homeland drifting toward abstraction. Rather than recovering the past, they stage the processes by which it is distorted, preserved, and made visible: anxiety rendered as dissolving form, hardship as sediment, nostalgia as growing conceptual distance. The tension lies between the vividness of what is remembered and its inevitable decay, between the body that records and the time that erases.","zh-Hans":"记忆很少是稳定的档案，它更像一种会融化、氧化并留下污渍的材料。这些作品追踪经验如何转化为残留与余像：可能是被光灼刻的一瞬，是一生累积的痕迹，也可能是正在滑向抽象的故乡。它们不试图找回过去，而是呈现过去被扭曲、保存与显影的过程：焦虑化为消融的形态，困苦成为沉积物，乡愁变成不断拉长的观念距离。张力在于被记住之物的鲜明与其必然的衰退之间，在于会记录的身体与会抹去的时间之间。","zh-Hant":"記憶很少是穩定的檔案，它更像一種會融化、氧化並留下污漬的材料。這些作品追蹤經驗如何轉化為殘留與餘像：可能是被光灼刻的一瞬，是一生累積的痕跡，也可能是正在滑向抽象的故鄉。它們不試圖找回過去，而是呈現過去被扭曲、保存與顯影的過程：焦慮化為消融的形態，困苦成為沉積物，鄉愁變成不斷拉長的觀念距離。張力在於被記住之物的鮮明與其必然的衰退之間，在於會記錄的身體與會抹去的時間之間。"}};
@@ -446,7 +462,8 @@ if(page==='works'){
     cancelAnimationFrame(scrollFrame);
     scrollFrame=requestAnimationFrame(updateActiveSlide);
   },{passive:true});
-  window.addEventListener('resize',updateActiveSlide);
+  window.addEventListener('resize',()=>{updateActiveSlide();fitWorkTitles();});
+  if(document.fonts) document.fonts.ready.then(fitWorkTitles);
   byId('index-button').addEventListener('click',()=>byId('theme-panel').showModal());
   byId('show-all').addEventListener('click',()=>applyCategory('all'));
   byId('brand').addEventListener('click',event=>{event.preventDefault();applyCategory('all');});
