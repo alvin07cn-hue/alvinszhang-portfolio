@@ -250,3 +250,8 @@ body.writing-page{overflow:auto}
 .slide--landscape .slide-title{font-size:clamp(3.1rem,5.2vw,6.6rem)}
 @media(max-width:800px){.slide--landscape .slide-title{font-size:clamp(3.2rem,12vw,5.6rem)}}
 @media(max-width:560px){.slide--landscape .slide-title{font-size:clamp(2.7rem,11vw,4.5rem)}}
+
+/* Keep artwork labels close to their content and restore the original mobile width. */
+.slide--landscape .slide-panel{min-width:0;width:max-content;max-width:min(43%,590px)}
+@media(max-width:800px){.slide--landscape .slide-panel{max-width:80%}.slide--portrait .slide-panel{width:min(76%,450px)}}
+@media(max-width:560px){.slide--landscape .slide-panel{max-width:90%}.slide--portrait .slide-panel{width:min(76%,450px)}}
